@@ -1,0 +1,17 @@
+<!-- Text only modal - e.g. terms and conditions -->
+<div class="container container--xl container--no-padding modal__content modal-text bg--white">
+
+  {% if item.title or item.subtitle %}
+    <h3 class="title title--lg text--bolder">{{item.title}}</h3>
+    <div class="space--xs"></div>
+    {% if item.subtitle %}<p class="title title--xxxs text--wide-kern text--upper">{{item.subtitle}}</p>{% endif %}
+    <hr class="hr--thick">
+  {% endif %}
+  {% if item.content %}
+    {{item.content}}
+    <hr class="hr--thick">
+  {% endif %}
+
+  <iframe src="{{item.iframe}}" width="100%" height="600" allow="geolocation"></iframe>
+
+</div>

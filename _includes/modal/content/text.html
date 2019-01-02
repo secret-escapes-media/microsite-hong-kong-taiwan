@@ -1,0 +1,12 @@
+<!-- Text only modal - e.g. terms and conditions -->
+<div class="container container--xl container--no-padding modal__content modal-text bg--white">
+  <div class="boxpad--xxl">
+
+    {% if item.title %}<h3 class="title title--md text--bold">{{item.title}}</h3>{% endif %}
+    <div class="space--xs"></div>
+    {% if item.subtitle %}<p class="title title--xxxs text--wide-kern text--upper">{{item.subtitle}}</p>{% endif %}
+    <hr>
+    {{item.content}}
+
+  </div>
+</div>

@@ -1,133 +1,204 @@
+
+/*=====================================
+  MODAL VARIABLES & SETUP
+=====================================*/
+
+$icon-size-sm: 3.2em;
+$icon-size: 4em;
+$content-width: 30%;
+$modaltransition-time: 300ms;
+$modaltransition-distance: 4em;
+
+@mixin modaltransition() { transition: all $modaltransition-time cubic-bezier(.5,0,.5,1); }
+
+// disable scroll and blur background when modal is active
+.disable-scroll {
+  overflow: hidden;
+  & >:not(.modal) {
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -o-filter: blur(10px);
+    -ms-filter: blur(10px);
+    filter: blur(10px);
+  }
+}
+
+
+
+/*=====================================
+  MODAL
+=====================================*/
+
 .modal {
-  $icon-size: 3em;
-  position: relative;
-  margin-top: ($icon-size*1.5);
-  margin-bottom: ($icon-size*1.5);
-  margin-left: ($icon-size / 2.5);
-  margin-right: ($icon-size / 2.5);
-  cursor: auto;
-  &.is-open   { display: block; }
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: $z-modal;
+  background-color: rgba($black,0.6);
+  overflow: hidden;
+  &.is-open { display: block; }
   &.is-closed { display: none; }
-  &__wrap {
+
+  // separate modal items from nav
+  &__container {
     display: flex;
     align-items: center;
-    justify-content: center;
-    min-height: 100%;
-    margin-bottom: ($icon-size * 6);
-  }
-  &__bg {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: $z-overlay;
-    background-color: rgba($grey-darker,.9);
-    cursor: pointer;
-    overflow: auto;
-    // smooth scrolling ios
-    -webkit-overflow-scrolling: touch;
-    &.is-open { display: block; }
-    &.is-closed { display: none; }
+    margin-left: auto;
+    margin-right: auto;
+    overflow: visible;
+    padding-left: $modaltransition-distance;
+    padding-right: $modaltransition-distance;
   }
-  &__content {
-    color: $grey-dark;
-    background-color: $white;
-    padding: $s2 $s3;
-  }
-  &__close {
+
+  // The modal content item that is shown/hidden based on selector
+  &__item {
+    @include modaltransition();
+    width: 100%;
+    max-height: 100%;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    opacity: 0;
     position: absolute;
-    right: 0;
-    top: -$icon-size;
-    height: $icon-size;
-    width: $icon-size;
-    background-color: rgba($black,.5);
-    background-image: url('../img/icons/close.svg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: ($icon-size/3);
-    cursor: pointer;
-    z-index: $z-overlay-upper;
-    transition: background-color $transition-time ease;
-    &:hover{ background-color: $black; }
-  }
-  &__nav {
-    position: fixed;
-    top: auto;
-    left: auto;
+    top: 0;
+    left: 0;
     right: 0;
     bottom: 0;
-    width: 50%;
-    height: $icon-size;
-    background-color: rgba($black, .8);
+    padding: 0;
+    overflow: scroll;
+    @include bp($lg){
+      padding: 0 $icon-size;
+      overflow: auto;
+    }
+
+    &.is-open     { left: 0; opacity: 1; }
+    &.is-opening  { left: 0; opacity: 1; }
+    &.is-closing-next  { left: -$modaltransition-distance; opacity: 0; }
+    &.is-closing-prev  { left: $modaltransition-distance; opacity: 0; }
+    &.is-closed   { left: 0; opacity: 0; }
+    &.is-prev     { left: -$modaltransition-distance; }
+    &.is-next     { left: $modaltransition-distance; }
+
+  }
+
+  &__content {
+    width: 100%;
+    max-height: 100%;
+  }
+
+  &__close {
+    @include transition;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: $icon-size-sm;
+    width: $icon-size-sm;
+    background-color: rgba($white,0.8);
+    background-image: url('../img/icons/close-dark.svg');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: .75em;
+    background-size: 1em;
     cursor: pointer;
-    transition: background-color $transition-time ease;
-    &--next {
-      right: 0;
-      background-image: url('../img/icons/arrow-right.svg');
-      border-left: 1px solid rgba($white,.5);
-    }
-    &--previous {
-      left: 0;
-      background-image: url('../img/icons/arrow-left.svg');
-    }
-    @include bp($md) {
-      position: absolute;
-      z-index: $z-overlay-upper;
-      top: 50%;
+    z-index: $z-overlay-upper;
+    &:hover{ background-color: $white; }
+    @include bp($lg){
+      height: $icon-size;
       width: $icon-size;
-      height: ($icon-size*2);
-      margin-top: -($icon-size);
-      background-color: rgba($black, .5);
-      background-size: 1em;
-      &--previous { left: -($icon-size); }
-      &--next {
-        right: -($icon-size);
-        border-left: 0;
-      }
-      &:hover     { background-color: $black; }
     }
   }
-  &--standard { max-width: $xl; }
-  &--series   { max-width: $xl; }
-  &--image    { max-width: $xxl; }
-  &--youtube  {
-    width: 100%;
-    max-width: $xxxl;
-    .video__wrap {
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 0;
-      width: 100%;
-      padding-bottom: 56.25%;
-      background-color: #000;
-    }
-    .video {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      width: 100%;
-      height: 100%;
-    }
-  }
-  @include bp($md) {
 
-    margin-left: $icon-size;
-    margin-right: $icon-size;
-    &__wrap { margin-bottom: 0; }
-  }
-  @include bp($lg){
-    &__content {
-      padding: $s4 $s6;
-    }
-  };
 }
 
-.disable-scroll { overflow: hidden; }
+// SPECIFIC MODIFIERS FOR BASIC TEXT MODAL
+.modal-text {
+  margin: $icon-size-sm auto;
+  @include bp($lg){
+    margin: $icon-size auto;
+  }
+}
+
+// SPECIFIC MODIFIERS FOR VIDEO MODAL
+.modal-video {
+  &__iframe {
+    @include transition();
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+// SPECIFIC MODIFIERS FOR MAP MODAL
+.modal-map {
+  padding: $icon-size-sm 0;
+  @include bp($lg){
+    padding: $icon-size 0;
+  }
+  &__frame {
+    position: relative;
+    z-index: $z-content;
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    &:before {
+      content: "";
+      display: block;
+      width: 100%;
+      padding-top: 56.25%;
+    }
+    & iframe {
+      position: absolute;
+      top: 0; bottom: 0;
+      left: 0; right: 0;
+    }
+  }
+}
+
+/*=====================================
+  MODAL CAROUSEL - if .modal--carousel
+=====================================*/
+
+.modal {
+  &__nav {
+    display: none;
+    .modal--carousel & {
+      @include transition;
+      display: block;
+      position: absolute;
+      bottom: 0;
+      height: $icon-size-sm;
+      width: 50%;
+      z-index: $z-overlay-upper;
+      background-color: rgba($white,0.8);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 1em;
+      cursor: pointer;
+      user-select: none;
+      &:hover{ background-color: $white; }
+      @include bp($lg){
+        bottom: auto;
+        top: 50%;
+        margin-top: -$icon-size;
+        height: $icon-size*2;
+        width: $icon-size;
+      }
+
+      &--next {
+        right: 0;
+        background-image: url('../img/icons/arrow-right-dark.svg');
+      }
+      &--previous {
+        left: 0;
+        background-image: url('../img/icons/arrow-left-dark.svg');
+      }
+    }
+  }
+
+}

@@ -2,8 +2,15 @@
 
 .bg {
   &--white { background-color: $white; }
-  &--light { background-color: $grey-lightest; }
-  &--dark  { background-color: $grey-dark; }
+
+  &--grey-darkest   { background-color: $grey-darkest; }
+  &--grey-darker    { background-color: $grey-darker; }
+  &--grey-dark      { background-color: $grey-dark; }
+  &--grey           { background-color: $grey; }
+  &--grey-light     { background-color: $grey-light; }
+  &--grey-lighter   { background-color: $grey-lighter; }
+  &--grey-lightest  { background-color: $grey-lightest; }
+
   &--img   { @include background-attributes; }
   &__fixed {
     position: fixed;

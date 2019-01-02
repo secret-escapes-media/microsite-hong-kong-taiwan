@@ -1,8 +1,14 @@
 # Site settings
 title: Metropolis to Mountain
-client:
-  name: Client Name
-  link: "#client-name"
+clients:
+  - name: Hong Kong Tourism Board
+    id: hong-kong
+    logo: hong-kong.svg
+    link: "#client-name"
+  - name: Taiwan Tourist Bureau
+    id: taiwan
+    logo: taiwan.svg
+    link: "#client-name"
 
 core-se-link: https://www.secretescapes.com/current-sales
 description: >
@@ -10,10 +16,10 @@ description: >
 
 # file paths
 url:     "http://mp.secretescapes.com" # the base hostname & protocol for your site
-baseurl: "/hong-kong-taiwan" # the subpath of your site, e.g. /blog/
-img:     "/hong-kong-taiwan/_assets/img"
-css:     "/hong-kong-taiwan/_assets/css"
-js:      "/hong-kong-taiwan/_assets/js"
+baseurl: "/metropolis-to-mountain" # the subpath of your site, e.g. /blog/
+img:     "/metropolis-to-mountain/_assets/img"
+css:     "/metropolis-to-mountain/_assets/css"
+js:      "/metropolis-to-mountain/_assets/js"
 
 
 # Build settings

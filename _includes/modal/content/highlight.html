@@ -1,0 +1,15 @@
+<!-- Highlight modal -->
+<div class="container container--xl container--no-padding modal__content modal-highlight">
+  <div class="bg-img bg-img--16-9" style="background-image: url({{site.img}}/content/{{page.id}}/{{item.id}}.jpg);"></div>
+  <div class="boxpad--xl bg--white">
+
+    <span class="title title--xs text--bold">{{item.title}}</span>
+    <div class="space--sm"></div>
+    <p>{{item.content}}</p>
+    {% if item.link %}
+      <div class="space--sm"></div>
+      <a href="{{item.link}}" target="_blank" id="tracking-highlight-{{item.id}}-btn" class="btn btn--primary">Mehr erfahren</a>
+    {% endif %}
+
+  </div>
+</div>
