@@ -10,6 +10,7 @@
   &--grey-light     { background-color: $grey-light; }
   &--grey-lighter   { background-color: $grey-lighter; }
   &--grey-lightest  { background-color: $grey-lightest; }
+  &--cathay  { background-color: $cathay; }
 
   &--img   { @include background-attributes; }
   &__fixed {

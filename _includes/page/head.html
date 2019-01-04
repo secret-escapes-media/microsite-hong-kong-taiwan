@@ -22,26 +22,28 @@
   <title>{{meta-title}}</title>
   <meta name="description" content="{{meta-description}}">
   <!-- START Social Data -->
-    <!-- Google / Search Engine Tags -->
-    <meta itemprop="name" content="{{meta-title}}">
-    <meta itemprop="description" content="{{meta-description}}">
-    <meta itemprop="image" content="{{social-image-url}}">
-    <!-- Facebook Meta Tags -->
-    <meta property="og:url" content="{{site.url}}{{site.baseurl}}{{page.url}}">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="{{meta-title}}">
-    <meta property="og:description" content="{{meta-description}}">
-    <meta property="og:image" content="{{social-image-url}}">
-    <!-- Twitter Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@secret_escapes">
-    <meta name="twitter:title" content="{{meta-title}}">
-    <meta name="twitter:description" content="{{meta-description}}">
-    <meta name="twitter:image" content="{{social-image-url}}">
+  <!-- Google / Search Engine Tags -->
+  <meta itemprop="name" content="{{meta-title}}">
+  <meta itemprop="description" content="{{meta-description}}">
+  <meta itemprop="image" content="{{social-image-url}}">
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="{{site.url}}{{site.baseurl}}{{page.url}}">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{meta-title}}">
+  <meta property="og:description" content="{{meta-description}}">
+  <meta property="og:image" content="{{social-image-url}}">
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@secret_escapes">
+  <meta name="twitter:title" content="{{meta-title}}">
+  <meta name="twitter:description" content="{{meta-description}}">
+  <meta name="twitter:image" content="{{social-image-url}}">
   <!-- END Social Data -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Montserrat" rel="stylesheet">
   <link rel="stylesheet" href="{{site.css}}/main.css">
   {% if page.extra-css %}<link rel="stylesheet" href="{{site.css}}/{{page.id}}.css">{% endif %}
   <script src="{{site.js}}/main.js"></script>
   {% if page.extra-js %}<script src="{{site.js}}/{{page.id}}.js"></script>{% endif %}
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.47.0/mapbox-gl.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.47.0/mapbox-gl.css' rel='stylesheet' />
 </head>

@@ -43,17 +43,18 @@ $('.js-toggle-mobile-nav').on('click', function(e) {
 });
 
 
+
 ///////////////////////////////////////
-//   query string searcher
+//   Query string searcher
 ///////////////////////////////////////
 
-// searches for specific queryString, returns value or true if empty value
-function getQueryStringByName(name, url) {
-  if (!url) url = window.location.href;
-  name = name.replace(/[\[\]]/g, "\\$&");
-  var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
-      results = regex.exec(url);
-  if (!results) return null;
-  if (!results[2]) return true;
-  return decodeURIComponent(results[2].replace(/\+/g, " "));
+function queryString(sParam){
+  var sPageURL = window.location.search.substring(1);
+  var sURLVariables = sPageURL.split("&");
+  for (var i = 0; i < sURLVariables.length; i++){
+    var sParameterName = sURLVariables[i].split("=");
+    if (sParameterName[0] == sParam){
+      return sParameterName[1];
+    }
+  }
 }

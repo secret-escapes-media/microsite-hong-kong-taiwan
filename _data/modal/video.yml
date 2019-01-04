@@ -1,6 +1,7 @@
 
 
-- id: video
+- type: video
+  id: video
   youtube-id: v_-2LSJgFGU
   title:
   pages:

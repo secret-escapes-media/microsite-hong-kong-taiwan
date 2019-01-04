@@ -114,10 +114,17 @@ gulp.task('build-main-js', function(cb) {
     // custom js - with on doc ready wrapper
     './_assets/js/_components/on-ready/start.js',
 
+    // map marker data
+    './_assets/js/_components/marker-data/cities.js',
+    './_assets/js/_components/marker-data/hong-kong.js',
+    './_assets/js/_components/marker-data/taiwan.js',
+    './_assets/js/_components/marker-data/pois.js',
+
     // components
     './_assets/js/_components/standard.js',
     './_assets/js/_components/offer-countdown.js',
     './_assets/js/_components/modal.js',
+    './_assets/js/_components/map.js',
 
     // custom js for project
     './_assets/js/main.js',

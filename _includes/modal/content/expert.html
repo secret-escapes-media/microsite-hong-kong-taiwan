@@ -1,0 +1,27 @@
+<!-- Expert modal -->
+<div class="container container--xxxl container--no-padding modal__content modal-expert">
+
+  <div class="boxpad--xl bg--white">
+
+    <div class="container container--xl text--center">
+      <span class="title title--lg text--bold">{{item.name}}</span>
+      <p class="text--xl">{{item.intro}}</p>
+    </div>
+
+    <div class="space--xl"></div>
+
+    <div class="row row--4-4-4">
+      {% for highlight in item.highlights %}
+      <div class="col">
+        <div class="bg-img bg-img--16-9" style="background-image: url({{site.img}}/content/{{page.id}}/{{highlight.id}}.jpg);"></div>
+        <div class="boxpad--xl bg--grey-lightest">
+          <span class="title title--xs text--bold">{{highlight.title}}</span>
+          <p>{{highlight.content}}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+  </div>
+</div>
+

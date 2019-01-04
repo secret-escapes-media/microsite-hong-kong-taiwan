@@ -1,4 +1,79 @@
 ---
 layout: default
 ---
-{{content}}
+
+<div class="vpad--xxl bg--grey-lightest">
+  <div class="container container--xxl text--center">
+    {{page.intro}}
+  </div>
+</div>
+
+<div class="vpad--xxl bg--grey-darkest">
+  <div class="container container--xxl text--center">
+    <a href="javascript:void(0);" data-map-focus="{{page.id}}" class="js-open-map btn btn--primary">Open {{page.title}} map</a>
+  </div>
+</div>
+
+
+{% assign sections = page.sections %}
+{% for section in sections %}
+
+<div class="vpad--xxl{% cycle '', ' bg--grey-lightest'%}">
+  <div class="container">
+    <!-- section title -->
+    <h2 class="title title--xxl">{{section.title}}</h2>
+    <div class="space--xl"></div>
+
+    <!-- section intro -->
+    <div class="row row--no-gutters bg--grey-lighter row--valign-center">
+      <div class="col col--4">
+        <div class="bg-img bg-img--1-1" style="background-image: url({{site.img}}/img.jpg);"></div>
+      </div>
+      <div class="col col--8">
+        <div class="boxpad--xxl">
+          {{section.content}}
+        </div>
+      </div>
+    </div>
+    <div class="space--xl"></div>
+
+    <!-- section highlights -->
+    <div class="row row--4-4-4">
+      {% for highlight in section.highlights %}
+        <div class="col">
+          {% include page/highlight.html %}
+        </div>
+      {% endfor %}
+    </div>
+
+  </div>
+</div>
+
+{% endfor %}
+
+
+
+<div class="vpad--xxl bg--grey-darkest text--white">
+  <div class="container container--xxl">
+    <div class="text--center">
+      <h2 class="title title--xl">Meet the experts</h2>
+      <p class="text--xl">Vestibulum id ligula porta felis euismod semper. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+    </div>
+    <div class="space--lg"></div>
+    <div class="row row--6-6">
+
+      {% assign experts = site.data.experts | where: "page", page.id %}
+      {% for expert in experts %}
+      <div class="col">
+        <div class="bg-img bg-img--3-4">
+          <a href="javascript:void(0);" data-modal-item="{{expert.id}}" class="js-open-modal bg-img__link"></a>
+        </div>
+      </div>
+      {% endfor %}
+
+    </div>
+  </div>
+</div>
+
+
+

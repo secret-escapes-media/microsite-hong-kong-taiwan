@@ -17,6 +17,10 @@
   &--orange { background-color: $orange;
     &:hover { background-color: $orange-dark; }
   }
+  &--white {
+    background-color: rgba($white,0.9); color: $grey-darker;
+    &:hover { background-color: $white; }
+  }
   &--outline {
     color: inherit;
     &:before {
@@ -39,5 +43,9 @@
       background-color: $orange;
       &:before { border-color: $orange; }
     }
+  }
+  &--primary,
+  &--solid { background-color: $partner;
+    &:hover { background-color: darken($partner,10); }
   }
 }

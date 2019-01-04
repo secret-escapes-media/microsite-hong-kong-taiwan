@@ -1,5 +1,5 @@
 
-{% assign modal-items = site.data.modal.text | concat: site.data.modal.highlight | concat: site.data.modal.video | concat: site.data.modal.form %}
+{% assign modal-items = site.data.modal.text | concat: site.data.modal.highlight | concat: site.data.modal.video | concat: site.data.modal.form | concat: site.data.experts %}
 
 <div class="js-modal modal is-closed content-spacing section-spacing">
   <div class="js-close-modal modal__close"></div>
@@ -21,12 +21,16 @@
               {% if item.page %}data-group-page="{{item.page}}"{% endif %}
               {% if item.section %}data-group-section="{{item.section}}"{% endif %}>
               <div class="modal__content">
-                {% if item.highlight %}
+                {% if item.type == 'highlight' %}
                   {% include modal/content/highlight.html %}
-                {% elsif item.youtube-id %}
+                {% elsif item.type == 'expert' %}
+                  {% include modal/content/expert.html %}
+                {% elsif item.type == 'video' %}
                   {% include modal/content/video.html %}
-                {% elsif item.iframe %}
+                {% elsif item.type == 'form' %}
                   {% include modal/content/form.html %}
+                {% elsif item.type == 'map' %}
+                  {% include modal/content/map.html %}
                 {% else %}
                   {% include modal/content/text.html %}
                 {% endif %}

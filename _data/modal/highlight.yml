@@ -1,12 +1,170 @@
-
+- type: highlight
+  id: old-palace
+  title: Old Palace
+  description: The oldest building in Stuttgart, dating back to the 10th century.
+  section: city-of-the-arts
+  pages:
+    - id: overview
 
 - type: highlight
-  id: highlight-modal
-  title: Highlight Modal
-  content: Sed posuere consectetur est at lobortis. Aenean lacinia bibendum nulla sed consectetur. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus..
+  id: landesmuseum-wurttemberg
+  title: Landesmuseum Württemberg
+  description: The primary history museum of the region, located in the Old Palace.
+  section: city-of-the-arts
+  pages:
+    - id: overview
+
+- type: highlight
+  id: ludwigsburg-palace
+  title: Ludwigsburg Palace
+  description: Dubbed the “Versailles of Swabia”, a grand palace a little out of Stuttgart.
+  section: city-of-the-arts
+  pages:
+    - id: overview
+
+- type: highlight
+  id: new-palace
+  title: New Palace
+  description: One of the last large city palaces in southern Germany.
+  section: city-of-the-arts
+  pages:
+    - id: overview
+
+- type: highlight
+  id: solitude-palace
+  title: Solitude Palace
+  description: A Rococo marvel on the edge of the city.
+  section: city-of-the-arts
+  pages:
+    - id: overview
+
+- type: highlight
+  id: staatstheater
+  title: Staatstheater
+  description: The home of the arts in Stuttgart.
+  section: city-of-the-arts
+  pages:
+    - id: overview
+
+- type: highlight
+  id: kunstmuseum
+  title: Kunstmuseum
+  description: Stuttgart’s futuristic temple of modern art.
+  section: city-of-the-arts
+  pages:
+    - id: overview
+
+- type: highlight
+  id: staatsgalerie
+  title: Staatsgalerie
+  description: A modernist marvel packed with contemporary art.
+  section: city-of-the-arts
+  pages:
+    - id: overview
+
+- type: highlight
+  id: weissenhof-estate
+  title: Weissenhof Estate
+  description: Le Corbusier's lauded modernist housing estate.
+  section: city-of-the-arts
+  pages:
+    - id: overview
+
+- type: highlight
+  id: porsche-museum
+  title: Porsche Museum
+  description: The home of all things Porsche.
+  section: motoring-heritage
+  pages:
+    - id: overview
+
+- type: highlight
+  id: mercedes-benz-museum
+  title: Mercedes-Benz Museum
+  description: The home of all things Mercedes-Benz.
+  section: motoring-heritage
+  pages:
+    - id: overview
+
+- type: highlight
+  id: zacke
+  title: Zacke
+  description: A rather unique form of public transport in Stuttgart.
+  section: motoring-heritage
+  pages:
+    - id: overview
+
+- type: highlight
+  id: cannstatter-volksfest
+  title: Cannstatter Volksfest
+  description: Stuttgart’s answer to Oktoberfest.
+  section: unique-flavours
+  pages:
+    - id: overview
+
+- type: highlight
+  id: stuttgarter-weinwanderweg
+  title: Stuttgarter Weinwanderweg
+  description: A wine trail through Stuttgart’s renowned vineyards.
+  section: unique-flavours
+  pages:
+    - id: overview
+
+- type: highlight
+  id: outletcity-metzingen
+  title: Outletcity Metzingen
+  description: A modern, design-forward shopping village.
+  section: a-shopping-destination
+  pages:
+    - id: overview
+
+- type: highlight
+  id: markthalle
+  title: Markthalle
+  description: Stuttgart’s central marketplace.
+  section: a-shopping-destination
+  pages:
+    - id: overview
+
+- type: highlight
+  id: bungalow
+  title: Bungalow
+  description: Boutique clothing store.
+  section: a-shopping-destination
+  pages:
+    - id: overview
+
+- type: highlight
+  id: best
+  title: Best
+  description: Boutique clothing store.
+  section: a-shopping-destination
+  pages:
+    - id: overview
+
+- type: highlight
+  id: horst-wanschura
+  title: Horst Wanschura
+  description: Vintage clothing store.
+  section: a-shopping-destination
+  pages:
+    - id: overview
+
+- type: highlight
+  id: smachtfetzen
+  title: Smachtfetzen
+  description: Boutique clothing store.
+  section: a-shopping-destination
   pages:
     - id: overview
 
 
 
 
+- type: highlight
+  id: highlight
+  title: Highlight
+  description: Curabitur blandit tempus porttitor. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec id elit non mi porta gravida at eget metus. Sed posuere consectetur est at lobortis. Maecenas faucibus mollis interdum.
+  pages:
+    - id: hong-kong
+    - id: taiwan
