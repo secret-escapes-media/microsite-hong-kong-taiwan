@@ -48,4 +48,7 @@
   &--solid { background-color: $partner;
     &:hover { background-color: darken($partner,10); }
   }
+  &--cathay { background-color: $cathay;
+    &:hover { background-color: darken($cathay,10); }
+  }
 }

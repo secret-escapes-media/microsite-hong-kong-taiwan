@@ -39,11 +39,11 @@
     var minZoomLevel       = 4.5;
     var markerColor        = "#c11b28";
 
-    // launch map with settings
+    // launch map with settings - append "?fresh=true" to "style:" to refresh
     mapboxgl.accessToken = 'pk.eyJ1IjoiaGFtaXNoamdyYXkiLCJhIjoiY2pkbjBmeGN6MDd1YzMzbXI3cWdpNThjayJ9.3YE8T1H2QUyqNIkxdKWxkg';
     var map = new mapboxgl.Map({
       container: 'map',
-      style: 'mapbox://styles/hamishjgray/cjk416sz102mb2rrsfn7qgt41',
+      style: 'mapbox://styles/hamishjgray/cjqfg2s4y0h3t2sq3u9ziyxif',
       logoPosition: 'bottom-right',
       minZoom: minZoomLevel,
       maxZoom: maxZoomLevel - 0.5,
@@ -179,8 +179,8 @@
           data: hongKongMarker
         },
         layout: {
-          "icon-image": "poi-large",
-          "icon-size": .75,
+          "icon-image": "poi",
+          "icon-size": 1,
           'icon-anchor': "bottom",
           "icon-allow-overlap": true
         }
@@ -240,8 +240,8 @@
           data: taiwanMarker
         },
         layout: {
-          "icon-image": "poi-large",
-          "icon-size": .75,
+          "icon-image": "poi",
+          "icon-size": 1,
           'icon-anchor': "bottom",
           "icon-allow-overlap": true
         }
@@ -383,8 +383,8 @@
         source: "poi-markers",
         filter: ["!has", "point_count"],
         layout: {
-          "icon-image": "poi-small", // custom icon is in the mapbox style spritesheet
-          "icon-size": .75,
+          "icon-image": "poi", // custom icon is in the mapbox style spritesheet
+          "icon-size": 0.5,
           'icon-anchor': "bottom",
           'icon-allow-overlap': true
         }

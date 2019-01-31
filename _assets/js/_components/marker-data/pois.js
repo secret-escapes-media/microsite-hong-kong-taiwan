@@ -5,7 +5,7 @@ var poiMarkers = {
     {
       "type": "Feature",
       "properties": {
-        "id": "old-palace"
+        "id": "highlight"
       },
       "geometry": {
         "type": "Point",
@@ -18,7 +18,7 @@ var poiMarkers = {
     {
       "type": "Feature",
       "properties": {
-        "id": "landesmuseum-wurttemberg"
+        "id": "highlight"
       },
       "geometry": {
         "type": "Point",
@@ -31,7 +31,7 @@ var poiMarkers = {
     {
       "type": "Feature",
       "properties": {
-        "id": "ludwigsburg-palace"
+        "id": "highlight"
       },
       "geometry": {
         "type": "Point",
@@ -44,7 +44,7 @@ var poiMarkers = {
     {
       "type": "Feature",
       "properties": {
-        "id": "new-palace"
+        "id": "highlight"
       },
       "geometry": {
         "type": "Point",
@@ -58,7 +58,7 @@ var poiMarkers = {
     {
       "type": "Feature",
       "properties": {
-        "id": "solitude-palace"
+        "id": "highlight"
       },
       "geometry": {
         "type": "Point",
@@ -71,7 +71,7 @@ var poiMarkers = {
     {
       "type": "Feature",
       "properties": {
-        "id": "staatstheater"
+        "id": "highlight"
       },
       "geometry": {
         "type": "Point",
@@ -84,7 +84,7 @@ var poiMarkers = {
     {
       "type": "Feature",
       "properties": {
-        "id": "kunstmuseum"
+        "id": "highlight"
       },
       "geometry": {
         "type": "Point",
@@ -97,7 +97,7 @@ var poiMarkers = {
     {
       "type": "Feature",
       "properties": {
-        "id": "staatsgalerie"
+        "id": "highlight"
       },
       "geometry": {
         "type": "Point",

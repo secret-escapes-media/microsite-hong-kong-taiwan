@@ -5,38 +5,73 @@ nav: true
 nav-order: 1
 title: Overview
 
+banner:
+  content: >
+    <div class="container text--center text--white">
+      <h1 class="title text--upper text--wide-kern">
+        <span class="banner-title">Metropolis </span><br />
+        <span class="title--md title--lines text--bold">to </span><br />
+        <span class="banner-title">Mountain</span>
+      </h1>
+    </div>
+
 intro: >
-  <p class="text--xl">Aenean lacinia bibendum nulla sed consectetur. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Vestibulum id ligula porta felis euismod semper. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+  <p class="text--lg">From the heady, bustling streets of vibrant Hong Kong to the breathtaking views that await atop Taiwan’s spellbinding mountains, fill your itinerary with an East Asian adventure like no other.</p>
+  <p class="text--lg">This corner of the world is remarkable in its diversity; centuries-old tradition mixes seamlessly with striking modernity, breathtaking natural landscapes are but a stone's throw from glistening metropolises. The food is equally varied, each region offering their own flavours to the melting pot of Asian cooking. Art, music and culture are as boundary-pushing as they are rooted in tradition, at home in trendy galleries and vibrant bars, mountain villages and remote islands.</p>
 
 ---
 
-<div class="vpad--xxl bg--grey-lightest">
+
+
+<div class="page-intro page-intro--light">
   <div class="container container--xxl text--center">
     {{page.intro}}
   </div>
 </div>
 
-<div class="vpad--xxl bg--grey-darkest">
-  <div class="container container--xxl text--center">
-    <a href="javascript:void(0);" data-map-focus="cities" class="js-open-map btn btn--primary">Open map</a>
+<div class="overview-content">
+  <div class="container vpad--lg">
+
+    <div class="text--center">
+      <h2 class="title title--lg">From metropolis to mountain, discover east Asia. </h2>
+      <div class="space--xl"></div>
+    </div>
+
+    {% assign guide-pages = site.html_pages | where: "layout", "guide" | sort:"nav-order" %}
+    <!-- Links -->
+    <div class="row row--6-6">
+    {% for guide in guide-pages %}
+      <div class="col">
+        <div class="bg-img bg-img--zoom bg-img--3-2" style="background-image: url('{{site.img}}/content/{{guide.id}}/banner.jpg');">
+          <div class="bg-img__content">
+            <div class="boxpad--md">
+              <span class="title title--xs text--upper text--wide-kern text--bold">Explore</span>
+              <h2 class="title title--xxl title--display text--bold text--upper">{{guide.title}}</h2>
+              <a href="{{site.baseurl}}/{{page.url}}" class="btn btn--solid">Explore now</a>
+            </div>
+          </div>
+          <a class="bg-img__link" href="{{site.baseurl}}{{guide.url}}"></a>
+        </div>
+      </div>
+    {% endfor %}
+    </div>
+
+    <!-- Map -->
+    <div class="space--lg"></div>
+    <div class="row">
+      <div class="col col--12">
+        <div class="bg-img bg-img--zoom bg-img--21-9" style="background-image: url({{site.img}}/content/map-bg.jpg);">
+          <a href="javascript:void(0);" data-map-focus="cities" class="js-open-map bg-img__link"></a>
+          <div class="bg-img__content">
+            <div class="boxpad--md">
+              <h2 class="title title--xxl title--display text--bold text--upper">Explore the map</h2>
+              <div class="space--xs"></div>
+              <span class="btn btn--primary">Discover now</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
 </div>
-
-
-{% assign guide-pages = site.html_pages | where: "layout", "guide" %}
-<div class="container vpad--xxl">
-  {% for guide in guide-pages %}
-  <div class="bob {% cycle '','bob--swap'%}">
-    <div class="bob__img">
-      <a href="{{site.baseurl}}{{guide.url}}">
-        <div class="bg-img bg-img--3-2" style="background-image: url('{{site.img}}/img.jpg');"></div>
-      </a>
-    </div>
-    <div class="bob__text">
-      <h2 class="title title--sm">{{guide.title}}</h2>
-      <p class="text--lg">{{ guide.intro | strip_html | truncate: 300 }}</p>
-    </div>
-  </div>
-  {% endfor %}
-</div>
-

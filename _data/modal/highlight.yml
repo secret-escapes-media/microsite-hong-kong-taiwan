@@ -1,170 +1,281 @@
+
+
+
+##  ==== Central & Soho // central-and-soho ====
+
 - type: highlight
-  id: old-palace
-  title: Old Palace
-  description: The oldest building in Stuttgart, dating back to the 10th century.
-  section: city-of-the-arts
+  title: Club 71
+  id: club-71
+  location: Hollywood Road, Central
+  content: With so many upmarket bars to pick from, why go to this rather simple, unassuming bar? Club 71 is the hangout for Hong Kong’s artists, creatives, and journalists, ad-libbing on the day’s news, and on art and culture. It’s a bohemian haunt, a colourfully-painted hangout that inspires friendly, intellectual conversation. Prop yourself up and meet the locals.
+  section: central-and-soho
   pages:
     - id: overview
-
-- type: highlight
-  id: landesmuseum-wurttemberg
-  title: Landesmuseum Württemberg
-  description: The primary history museum of the region, located in the Old Palace.
-  section: city-of-the-arts
-  pages:
-    - id: overview
-
-- type: highlight
-  id: ludwigsburg-palace
-  title: Ludwigsburg Palace
-  description: Dubbed the “Versailles of Swabia”, a grand palace a little out of Stuttgart.
-  section: city-of-the-arts
-  pages:
-    - id: overview
-
-- type: highlight
-  id: new-palace
-  title: New Palace
-  description: One of the last large city palaces in southern Germany.
-  section: city-of-the-arts
-  pages:
-    - id: overview
-
-- type: highlight
-  id: solitude-palace
-  title: Solitude Palace
-  description: A Rococo marvel on the edge of the city.
-  section: city-of-the-arts
-  pages:
-    - id: overview
-
-- type: highlight
-  id: staatstheater
-  title: Staatstheater
-  description: The home of the arts in Stuttgart.
-  section: city-of-the-arts
-  pages:
-    - id: overview
-
-- type: highlight
-  id: kunstmuseum
-  title: Kunstmuseum
-  description: Stuttgart’s futuristic temple of modern art.
-  section: city-of-the-arts
-  pages:
-    - id: overview
-
-- type: highlight
-  id: staatsgalerie
-  title: Staatsgalerie
-  description: A modernist marvel packed with contemporary art.
-  section: city-of-the-arts
-  pages:
-    - id: overview
-
-- type: highlight
-  id: weissenhof-estate
-  title: Weissenhof Estate
-  description: Le Corbusier's lauded modernist housing estate.
-  section: city-of-the-arts
-  pages:
-    - id: overview
-
-- type: highlight
-  id: porsche-museum
-  title: Porsche Museum
-  description: The home of all things Porsche.
-  section: motoring-heritage
-  pages:
-    - id: overview
-
-- type: highlight
-  id: mercedes-benz-museum
-  title: Mercedes-Benz Museum
-  description: The home of all things Mercedes-Benz.
-  section: motoring-heritage
-  pages:
-    - id: overview
-
-- type: highlight
-  id: zacke
-  title: Zacke
-  description: A rather unique form of public transport in Stuttgart.
-  section: motoring-heritage
-  pages:
-    - id: overview
-
-- type: highlight
-  id: cannstatter-volksfest
-  title: Cannstatter Volksfest
-  description: Stuttgart’s answer to Oktoberfest.
-  section: unique-flavours
-  pages:
-    - id: overview
-
-- type: highlight
-  id: stuttgarter-weinwanderweg
-  title: Stuttgarter Weinwanderweg
-  description: A wine trail through Stuttgart’s renowned vineyards.
-  section: unique-flavours
-  pages:
-    - id: overview
-
-- type: highlight
-  id: outletcity-metzingen
-  title: Outletcity Metzingen
-  description: A modern, design-forward shopping village.
-  section: a-shopping-destination
-  pages:
-    - id: overview
-
-- type: highlight
-  id: markthalle
-  title: Markthalle
-  description: Stuttgart’s central marketplace.
-  section: a-shopping-destination
-  pages:
-    - id: overview
-
-- type: highlight
-  id: bungalow
-  title: Bungalow
-  description: Boutique clothing store.
-  section: a-shopping-destination
-  pages:
-    - id: overview
-
-- type: highlight
-  id: best
-  title: Best
-  description: Boutique clothing store.
-  section: a-shopping-destination
-  pages:
-    - id: overview
-
-- type: highlight
-  id: horst-wanschura
-  title: Horst Wanschura
-  description: Vintage clothing store.
-  section: a-shopping-destination
-  pages:
-    - id: overview
-
-- type: highlight
-  id: smachtfetzen
-  title: Smachtfetzen
-  description: Boutique clothing store.
-  section: a-shopping-destination
-  pages:
-    - id: overview
-
-
-
-
-- type: highlight
-  id: highlight
-  title: Highlight
-  description: Curabitur blandit tempus porttitor. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec id elit non mi porta gravida at eget metus. Sed posuere consectetur est at lobortis. Maecenas faucibus mollis interdum.
-  pages:
     - id: hong-kong
+
+- type: highlight
+  title: Man Mo Temple
+  id: man-mo-temple
+  location: Hollywood Road, Central
+  content: One of Hong Kong’s oldest temples, Man Mo is a serene spiritual outpost in the heart of the city. Man represents the gods of literature, and Mo the gods of war. This Taoist temple was built in 1847 by wealthy Chinese merchants, often hosting disputes between the Chinese and colonialists. The heady atmosphere beguiles any visitor, proving a thoroughly enchanting experience.
+  section: central-and-soho
+  pages:
+    - id: overview
+    - id: hong-kong
+
+- type: highlight
+  title: Lan Kwai Fong
+  id: lan-kwai-fong
+  location: Between Soho & Central Hong Kong
+  content: A classic nightspot since the ‘80s, LKF is a byword for Hong Kong nightlife. Packed-out bars buzz with classic dancefloor hits, where revellers spill out into the streets charging the night with energy. These are well-worn stomping grounds, but the sheer excitement the streets foster makes LKF an addictive place to dance the night away...
+  section: central-and-soho
+  pages:
+    - id: overview
+    - id: hong-kong
+
+
+
+##  ==== Causeway Bay // causeway-bay ====
+
+- type: highlight
+  title: Boutique Shopping
+  id: boutique-shopping
+  location: Various Locations
+  content: With all the high-end stores vying for your attention (and more importantly, your money), it may pay to seek out something a little more unique. Discover local designers for truly cutting-edge fashion. Try the Island Beverley Mall, a place of youthful exuberance with bright fashions illuminating micro-shops sat at the forefront of Hong Kong’s fashion trends.
+  section: causeway-bay
+  pages:
+    - id: overview
+    - id: hong-kong
+
+- type: highlight
+  title: Food Street
+  id: food-street
+  location: Houston Street, Causeway Bay
+  content: If you’re doing Causeway Bay the right way, you’ll need a refuel before digging out your new outfit. Head over to cleverly named Food Street, for al fresco dining spots that embody the fact that Hong Kong is a premiere foodie destination.
+  section: causeway-bay
+  pages:
+    - id: overview
+    - id: hong-kong
+
+- type: highlight
+  title: Times Square
+  id: times-square
+  location: Matheson Street, Causeway Bay
+  content: Hong Kong’s Times Square shares much of the awe-inspiring drama of New York’s counterpart. Best seen at night, Times Square lights up in a myriad of colours that reach to the tops of the surrounding glass and steel monoliths. Plus, all the shops stay open late into the night.
+  section: causeway-bay
+  pages:
+    - id: overview
+    - id: hong-kong
+
+
+
+
+##  ==== Sheung Wuan // sheung-wuan ====
+
+- type: highlight
+  title: Cat Street Market
+  id: cat-street-market
+  location: Upper Lascar Row, Hong Kong
+  content: Find your treasures at the Cat Street Market. Beyond the tourist trinkets, you’ll find plenty of antiques and vintage collectibles waiting to be bartered for. A whole host of vintage Chinese kitsch awaits, from figurines and posters to old cameras and vintage postcards.
+  section: sheung-wuan
+  pages:
+    - id: overview
+    - id: hong-kong
+
+- type: highlight
+  title: Tai Ping Shan Street
+  id: tai-ping-shan-street
+  location: Tai Ping Shan Street
+  content: This trendy street is lined with indie spots flogging delicious brunches and coffee, local arts and crafts, plus hosting small exhibitions for upcoming artists. Pop-ups rule down this historic street, meaning you’ll always be treated to the most current Hong Kong trends.
+  section: sheung-wuan
+  pages:
+    - id: overview
+    - id: hong-kong
+
+- type: highlight
+  title: Yardbird
+  id: yardbird
+  location: Tai Ping Shan, Hong Kong
+  content: The brainchild of acclaimed restaurateur Lindsay Jang, Yardbird is a hip ode to the chicken. A Japanese approach offers the bird dished up in a mouth-watering variety, each more delicious than the last. When it launched, Yardbird was the talk of the town. No reservations taken, so get down early and indulge.
+  section: sheung-wuan
+  pages:
+    - id: overview
+    - id: hong-kong
+
+
+
+
+##  ==== Sai Ying Pun // sai-ying-pun ====
+
+- type: highlight
+  title: Ping Pong 129 Gintoneria
+  id: ping-pong-129-gintoneria
+  location: Second St, Sai Ying Pun
+  content: A bright red door is the only signal to show you’ve arrived. This trendy speakeasy has taken the Spanish gin and tonic craze to Hong Kong, creating a chic setting that mixes classic local aesthetic with an international flavour. Order irresistible mixes and snack on tapas from the kitchen. Perfect.
+  section: sai-ying-pun
+  pages:
+    - id: overview
+    - id: hong-kong
+
+- type: highlight
+  title: Fish School
+  id: fish-school
+  location: Sai Ying Pun
+  content: As the name suggests, this coveted eatery is an ode to Hong Kong’s seafaring past, delighting those in-the-know with a fine selection of sea fare. Tapas-style servings in intimate surroundings offer a delectable myriad of flavours. Don’t miss this top pick for seafood in Hong Kong!
+  section: sai-ying-pun
+  pages:
+    - id: overview
+    - id: hong-kong
+
+- type: highlight
+  title: Sweet Classroom
+  id: sweet-classroom
+  location: Third St, Sai Ying Pun
+  content: After filling your belly in this foodie district, you’ll wonder if there’s any room left. Well, for this place, of course there is! This tiny shop dishes up a host of irresistible sweet treats. The unconventional tiramisu is not to be missed.
+  section: sai-ying-pun
+  pages:
+    - id: overview
+    - id: hong-kong
+
+
+
+
+
+
+
+
+################################################
+##  TAIWAN
+################################################
+
+##  ==== North // north ====
+
+- type: highlight
+  title: Jiufin teahouse
+  id: jiufin-teahouse
+  location: Location
+  content: Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum. Maecenas sed diam eget risus varius blandit sit amet non magna. Etiam porta sem malesuada magna mollis euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id elit non mi porta gravida at eget metus.
+  section: north
+  pages:
+    - id: overview
     - id: taiwan
+
+- type: highlight
+  title: Yangmingshan geysers
+  id: yangmingshan-geysers
+  location: Location
+  content: Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum. Maecenas sed diam eget risus varius blandit sit amet non magna. Etiam porta sem malesuada magna mollis euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id elit non mi porta gravida at eget metus.
+  section: north
+  pages:
+    - id: overview
+    - id: taiwan
+
+- type: highlight
+  title: Hot springs
+  id: hot-springs
+  location: Location
+  content: Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum. Maecenas sed diam eget risus varius blandit sit amet non magna. Etiam porta sem malesuada magna mollis euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id elit non mi porta gravida at eget metus.
+  section: north
+  pages:
+    - id: overview
+    - id: taiwan
+
+##  ==== East // east ====
+
+- type: highlight
+  title: Penghu Island
+  id: penghu-island
+  location: Location
+  content: Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum. Maecenas sed diam eget risus varius blandit sit amet non magna. Etiam porta sem malesuada magna mollis euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id elit non mi porta gravida at eget metus.
+  section: east
+  pages:
+    - id: overview
+    - id: taiwan
+
+- type: highlight
+  title: Taroko Gorge tribe
+  id: taroko-gorge-tribe
+  location: Location
+  content: Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum. Maecenas sed diam eget risus varius blandit sit amet non magna. Etiam porta sem malesuada magna mollis euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id elit non mi porta gravida at eget metus.
+  section: east
+  pages:
+    - id: overview
+    - id: taiwan
+
+- type: highlight
+  title: Alishan Mountain railway tribe
+  id: alishan-mountain-railway-tribe
+  location: Location
+  content: Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum. Maecenas sed diam eget risus varius blandit sit amet non magna. Etiam porta sem malesuada magna mollis euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id elit non mi porta gravida at eget metus.
+  section: east
+  pages:
+    - id: overview
+    - id: taiwan
+
+##  ==== South // south ====
+
+- type: highlight
+  title: Tianliao Moon World
+  id: tianliao-moon-world
+  location: Location
+  content: Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum. Maecenas sed diam eget risus varius blandit sit amet non magna. Etiam porta sem malesuada magna mollis euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id elit non mi porta gravida at eget metus.
+  section: south
+  pages:
+    - id: overview
+    - id: taiwan
+
+- type: highlight
+  title: Kenting’s birds and butterflies
+  id: kentings-birds-and-butterflies
+  location: Location
+  content: Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum. Maecenas sed diam eget risus varius blandit sit amet non magna. Etiam porta sem malesuada magna mollis euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id elit non mi porta gravida at eget metus.
+  section: south
+  pages:
+    - id: overview
+    - id: taiwan
+
+- type: highlight
+  title: Orchid island tribe
+  id: orchid-island-tribe
+  location: Location
+  content: Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum. Maecenas sed diam eget risus varius blandit sit amet non magna. Etiam porta sem malesuada magna mollis euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id elit non mi porta gravida at eget metus.
+  section: south
+  pages:
+    - id: overview
+    - id: taiwan
+
+##  ==== West // west ====
+
+- type: highlight
+  title: Yushan
+  id: yushan
+  location: Location
+  content: Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum. Maecenas sed diam eget risus varius blandit sit amet non magna. Etiam porta sem malesuada magna mollis euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id elit non mi porta gravida at eget metus.
+  section: west
+  pages:
+    - id: overview
+    - id: taiwan
+
+- type: highlight
+  title: Oldest Temples
+  id: oldest-temples
+  location: Location
+  content: Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum. Maecenas sed diam eget risus varius blandit sit amet non magna. Etiam porta sem malesuada magna mollis euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id elit non mi porta gravida at eget metus.
+  section: west
+  pages:
+    - id: overview
+    - id: taiwan
+
+- type: highlight
+  title: Sun Moon lake
+  id: sun-moon-lake
+  location: Location
+  content: Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum. Maecenas sed diam eget risus varius blandit sit amet non magna. Etiam porta sem malesuada magna mollis euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id elit non mi porta gravida at eget metus.
+  section: west
+  pages:
+    - id: overview
+    - id: taiwan
+
+
+
+

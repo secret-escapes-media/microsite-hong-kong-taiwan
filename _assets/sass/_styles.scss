@@ -1,1 +1,118 @@
 // general styles for the project that wouldn't be a reuseable component
+
+
+.page {
+  &-intro {
+    position: relative;
+    padding: $s8 0;
+    background: $black;
+    color: $white;
+    &:before {
+      content: "";
+      position: absolute;
+      bottom: 100%; left: 0;
+      height: 100px;
+      width: 100%;
+      background: linear-gradient(0deg, rgba($black,1), rgba($black,0));
+    }
+    &--light {
+      background: $white;
+      color: $grey-darker;
+      &:before {
+        content: none;
+      }
+    }
+  }
+}
+
+
+
+.overview-content {
+  padding-bottom: $s12;
+  background-position: center bottom;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-image: url('../img/content/overview/overview-bg-fade.jpg');
+}
+
+
+
+/* ===============================================
+   HIGHLIGHT
+ * =============================================== */
+
+.highlight {
+  @include transition();
+  position: relative;
+  overflow: visible;
+  margin-bottom: 2em;
+  box-shadow: 0 0 30px 0 rgba($black,0.1);
+
+  &__link {
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    z-index: 10;
+  }
+
+  &__title {
+    @include transition();
+    background-color: rgba($partner,0.85);
+    position: absolute;
+    z-index: $z-content-upper;
+    top: 0.66em;
+    left: -0.66em;
+    padding: 0.66em 0.66em;
+    white-space: normal;
+    & .title {
+      color: $white;
+    }
+  }
+  &:hover &__title {
+    background-color: rgba($partner,1);
+    left: -0em;
+  }
+
+  &__content {
+    @include transition();
+    color: $grey-darker;
+    white-space: normal;
+    width: 100%;
+    padding: 1.5em;
+    background-color: $white;
+  }
+
+}
+
+
+
+.guide-section {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: $s10 0;
+  &__bg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: $xxl;
+    background-color: rgba($white,0.5);
+    left: 50%;
+    margin-left: -480px;
+    z-index: 0;
+  }
+  // light theme
+  &--dark {
+    background-color: $grey-darkest;
+    color: $white;
+    & .title { color: $white; }
+  }
+  &--dark &__bg {
+    background-color: rgba($black,0.5);
+  }
+
+  &__content {
+    position: relative;
+    z-index: 10;
+  }
+}

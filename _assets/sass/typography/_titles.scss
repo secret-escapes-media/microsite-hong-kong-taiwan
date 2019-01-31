@@ -4,6 +4,7 @@
 
   // custom content headline
   font-family: $font-title-01;
+  line-height: 1;
   &--xxxl   { font-size: $s8; }
   &--xxl    { font-size: $s7; }
   &--xl     { font-size: $s6; }
@@ -24,6 +25,8 @@
     &--xxs    { font-size: $s2; }
     &--xxxs   { font-size: $s1; }
   }
+  // display
+  &--display { font-family: $font-title-02; }
 
 }
 
@@ -77,10 +80,56 @@
 .banner-title {
 
   // custom banner headline
-  font-family: $font-title-01;
+  font-family: $font-title-02;
   text-transform: uppercase;
   font-size: $s5;
+  line-height: 1.1;
+  font-weight: 500;
   @include bp($md){ font-size: $s7; }
   @include bp($xl){ font-size: $s10; }
+  @include bp($xxl){ font-size: $s11; }
 
+}
+
+
+.title--lines {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 1em;
+
+  &:after {
+    content: "";
+    width: 40px; height: 4px;
+    position: absolute;
+    bottom: 0.5em; left: 50%;
+    margin-left: -20px;
+    border-top: 1px solid rgba($black,0.1);
+    border-bottom: 1px solid rgba($black,0.1);
+    .text--white & {
+      border-top: 1px solid rgba($white,0.5);
+      border-bottom: 1px solid rgba($white,0.5);
+    }
+  }
+
+  @include bp($lg){
+    padding-bottom: 0;
+    &:before,
+    &:after {
+      content: "";
+      width: 60px; height: 4px;
+      margin: 0 0.5em;
+      position: absolute;
+      bottom: auto;
+      top: 50%;
+      margin-top: -2px;
+      border-top: 1px solid rgba($black,0.1);
+      border-bottom: 1px solid rgba($black,0.1);
+      .text--white & {
+        border-top: 1px solid rgba($white,0.5);
+        border-bottom: 1px solid rgba($white,0.5);
+      }
+    }
+    &:before { right: 100%; }
+    &:after { left: 100%; }
+  }
 }

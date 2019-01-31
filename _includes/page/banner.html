@@ -1,11 +1,15 @@
-<div class="banner">
+<div class="banner{% if page.layout == 'guide' or page.id == 'overview' %} banner--hero{% endif %}">
   <div class="site-header__offset"></div>
-  <div class="banner__bg" style="background-image: url('{{site.img}}/img.jpg')"></div>
+  <div class="site-nav__offset"></div>
+  <div class="banner__bg" style="background-image: url('{{site.img}}/content/{{page.id}}/banner.jpg')"></div>
   <div class="banner__wrap">
     {% if page.banner.content %}
       {{page.banner.content | liquify}}
     {% else %}
-      <div class="container container--no-padding text--center">
+      <div class="container container--no-padding text--center text--white">
+
+        <div class="title title--xs title--lines text--upper text--wide-kern text--bold">Metropolis to Mountain</div>
+
         {% if page.banner.title-sup %}<h2 class="sub-title">{{page.banner.title-sup}}</h2>{% endif %}
         <h1 class="banner-title">{% if page.banner.title %}{{page.banner.title}}{% else %}{{page.title}}{% endif %}</h1>
         {% if page.banner.title-sub %}<h2 class="sub-title">{{page.banner.title-sub}}</h2>{% endif %}

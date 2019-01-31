@@ -4,7 +4,7 @@ var hongKongMarkers = {
     {
       "type": "Feature",
       "properties": {
-        "id": "old-palace"
+        "id": "highlight"
       },
       "geometry": {
         "type": "Point",
@@ -17,7 +17,7 @@ var hongKongMarkers = {
     {
       "type": "Feature",
       "properties": {
-        "id": "landesmuseum-wurttemberg"
+        "id": "highlight"
       },
       "geometry": {
         "type": "Point",
@@ -30,7 +30,7 @@ var hongKongMarkers = {
     {
       "type": "Feature",
       "properties": {
-        "id": "ludwigsburg-palace"
+        "id": "highlight"
       },
       "geometry": {
         "type": "Point",
@@ -43,7 +43,7 @@ var hongKongMarkers = {
     {
       "type": "Feature",
       "properties": {
-        "id": "new-palace"
+        "id": "highlight"
       },
       "geometry": {
         "type": "Point",

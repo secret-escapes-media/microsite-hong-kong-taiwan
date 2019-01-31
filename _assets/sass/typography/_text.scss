@@ -2,23 +2,24 @@
 
 .text {
   // sizes
-  &--xxl { font-size: 1.2rem; line-height: 1.6; letter-spacing: 0; }
-  &--xl  { font-size: 1.1rem; line-height: 1.6; letter-spacing: 0; }
-  &--lg  { font-size: 1.05rem; letter-spacing: 0; }
+  &--xxl { font-size: 1.32rem; line-height: 1.6; letter-spacing: 0; }
+  &--xl  { font-size: 1.24rem; line-height: 1.6; letter-spacing: 0; }
+  &--lg  { font-size: 1.16rem; line-height: 1.6; letter-spacing: 0; }
   &--sm  { font-size: .8rem; }
 
   // styles
   &--italic       { font-style: italic; }
   &--light        { font-weight: 300; }
   &--normal       { font-weight: 400; }
+  &--medium       { font-weight: 500; }
   &--bold         { font-weight: 600; }
   &--bolder       { font-weight: 700; }
-  &--wide-kern    { letter-spacing: .25em; }
-  &--wide-kern-lg { letter-spacing: .5em; }
+  &--wide-kern    { letter-spacing: .15em; }
+  &--wide-kern-lg { letter-spacing: .3em; }
   &--upper        { text-transform: uppercase; }
 
   // colours
-  &--white { color: $grey-lightest; }
+  &--white { color: $white; }
   &--black { color: $grey-dark; }
 
   // alignment

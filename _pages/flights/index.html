@@ -4,28 +4,40 @@ id: flights
 title: Flights
 nav: true
 nav-order: 4
-nav-title: Flights
+nav-title: Getting there
 
 banner:
   content: >
-    <div class="container text--center">
-      <h1 class="title title--xxxl">Flights with Cathay Pacific</h1>
-    </div>
+
 
 intro: >
-  <p class="text--xxl">Curabitur blandit tempus porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed consectetur. Curabitur blandit tempus porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed consectetur.</p>
+  <h1 class="title title--xl title--display text--bold text--upper">Flights with Cathay Pacific</h1>
+  <p class="text--xl">With 49 non-stop flights a week from the UK, Cathay Pacific is the natural airline choice when travelling to electric Hong Kong. For your convenience, choose to fly from London Heathrow, London Gatwick or Manchester Airport. </p>
+  <div class="space--sm"></div>
+  <a href="#" class="btn btn--cathay">View flights</a>
 
 
 features:
 
-  - title: Feature title
-    content: Curabitur blandit tempus porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed consectetur. Curabitur blandit tempus porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed consectetur.
+  - title: A little extra
+    id: luggage
+    content: Take the hassle out of packing – and shopping, with their generous standard luggage allowance in all cabins of 30kgs in Economy, 35kgs in Premium Economy, 40kgs in Business Class and 50kgs in First.
 
-  - title: Feature title
-    content: Curabitur blandit tempus porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed consectetur. Curabitur blandit tempus porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed consectetur.
+  - title: Bright Lights, Big City
+    id: cities
+    content: Make it a multi-destination trip; choose to travel onwards and add a stop-over in Hong Kong in either, or both, directions when flying to our extensive network in South East Asia, Australia, New Zealand, China, Japan and Korea.
 
-  - title: Feature title
-    content: Curabitur blandit tempus porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed consectetur. Curabitur blandit tempus porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed consectetur.
+  - title: Upgrade to Premium Economy
+    id: upgrade
+    content: Choose to fly Premium and enjoy priority boarding, amenity kit, drink upon boarding and more spacious seats.
+
+  - title: Reduce jetlag on the A350
+    id: jetlag
+    content: Flights from London Gatwick and Manchester are operated on our Airbus A350 aircraft. Wider cabins, intelligent mood lighting, reduced noise, improved cabin pressure and humidity levels all help to maximise comfort.
+
+  - title: You’re in control
+    id: control
+    content: Manage your journey your way, all on the Cathay Pacific mobile app.
 
 
 ---
@@ -39,16 +51,16 @@ features:
 
 
 {% assign features = page.features %}
-<div class="container vpad--xxl">
+<div class="container container--xxl vpad--xxl">
   {% for feature in features %}
   <div class="bob {% cycle '','bob--swap'%}">
     <div class="bob__img">
       <a href="{{site.baseurl}}{{feature.url}}">
-        <div class="bg-img bg-img--3-2" style="background-image: url('{{site.img}}/img.jpg');"></div>
+        <div class="bg-img bg-img--3-2" style="background-image: url('{{site.img}}/content/{{page.id}}/{{feature.id}}.jpg');"></div>
       </a>
     </div>
     <div class="bob__text">
-      <h2 class="title title--sm">{{feature.title}}</h2>
+      <h2 class="title title--sm text--bold">{{feature.title}}</h2>
       <p class="text--lg">{{ feature.content}}</p>
     </div>
   </div>
@@ -57,7 +69,7 @@ features:
 
 <div class="vpad--xxl bg--cathay text--white">
   <div class="container container--xl text--center">
-    <h2 class="title title--lg">Book your flights now</h2>
+    <h2 class="title title--xl title--display text--bold text--upper">Book your flights now</h2>
     <p class="text--lg">Nullam quis risus eget urna mollis ornare vel eu leo. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
     <div class="space--sm"></div>
     <a href="#" class="btn btn--white">View flights</a>

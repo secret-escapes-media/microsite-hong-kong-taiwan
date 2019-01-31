@@ -13,6 +13,7 @@
   &--cathay  { background-color: $cathay; }
 
   &--img   { @include background-attributes; }
+  &--img-fixed { background-attachment: fixed; }
   &__fixed {
     position: fixed;
     top: 0;

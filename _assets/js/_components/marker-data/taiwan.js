@@ -4,7 +4,7 @@ var taiwanMarkers = {
     {
       "type": "Feature",
       "properties": {
-        "id": "solitude-palace"
+        "id": "highlight"
       },
       "geometry": {
         "type": "Point",
@@ -17,7 +17,7 @@ var taiwanMarkers = {
     {
       "type": "Feature",
       "properties": {
-        "id": "staatstheater"
+        "id": "highlight"
       },
       "geometry": {
         "type": "Point",
@@ -30,7 +30,7 @@ var taiwanMarkers = {
     {
       "type": "Feature",
       "properties": {
-        "id": "kunstmuseum"
+        "id": "highlight"
       },
       "geometry": {
         "type": "Point",
@@ -43,7 +43,7 @@ var taiwanMarkers = {
     {
       "type": "Feature",
       "properties": {
-        "id": "staatsgalerie"
+        "id": "highlight"
       },
       "geometry": {
         "type": "Point",

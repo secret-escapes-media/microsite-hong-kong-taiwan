@@ -15,6 +15,9 @@
       {{ content }}
     </div>
 
+    {% unless page.id == 'flights' or page.id == 'competition' %}
+      {% include page/promo-flights.html %}
+    {% endunless %}
     {% include page/footer.html %}
 
     {% include modal/map.html %}

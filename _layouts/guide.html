@@ -2,15 +2,28 @@
 layout: default
 ---
 
-<div class="vpad--xxl bg--grey-lightest">
-  <div class="container container--xxl text--center">
-    {{page.intro}}
-  </div>
-</div>
+<div class="page-intro">
+  <div class="container container--xxl">
 
-<div class="vpad--xxl bg--grey-darkest">
-  <div class="container container--xxl text--center">
-    <a href="javascript:void(0);" data-map-focus="{{page.id}}" class="js-open-map btn btn--primary">Open {{page.title}} map</a>
+    <div class="text--center">
+      {{page.intro}}
+      <div class="space--md"></div>
+      <a href="javascript:void(0);" data-map-focus="{{page.id}}" class="js-open-map btn btn--primary">Explore {{page.title}} map</a>
+    </div>
+
+    <div class="space--xxl"></div>
+    {% for feature in page.intro-sections %}
+      <div class="bob{% cycle '', ' bob--swap'%}">
+        <div class="bob__img">
+          <div class="bg-img bg-img--4-3" style="background-image: url({{site.img}}/img.jpg);"></div>
+        </div>
+        <div class="bob__text">
+          <h2 class="title title--lg text--bold">{{feature.title}}</h2>
+          {{feature.content}}
+        </div>
+      </div>
+    {% endfor %}
+
   </div>
 </div>
 
@@ -18,31 +31,37 @@ layout: default
 {% assign sections = page.sections %}
 {% for section in sections %}
 
-<div class="vpad--xxl{% cycle '', ' bg--grey-lightest'%}">
-  <div class="container">
+<div class="guide-section {% if page.id == 'hong-kong' %} guide-section--dark text--white{% endif %}" style="background-image: url({{site.img}}/content/{{page.id}}/bg-{{section.id}}.jpg);">
+  <div class="guide-section__bg"></div>
+  <div class="guide-section__content container">
     <!-- section title -->
-    <h2 class="title title--xxl">{{section.title}}</h2>
-    <div class="space--xl"></div>
+    <div class="text--center">
 
-    <!-- section intro -->
-    <div class="row row--no-gutters bg--grey-lighter row--valign-center">
-      <div class="col col--4">
-        <div class="bg-img bg-img--1-1" style="background-image: url({{site.img}}/img.jpg);"></div>
+      <h2 class="title title--xxxl title--display text--upper text--bold">{{section.title}}</h2>
+      <div class="space--xxs"></div>
+      <h5 class="title title--xxs title--lines text--medium text--upper text--wide-kern">{{section.subtitle}}</h5>
+      <div class="space--sm"></div>
+      <div class="container container--xl text--medium">
+        {{section.content}}
       </div>
-      <div class="col col--8">
-        <div class="boxpad--xxl">
-          {{section.content}}
-        </div>
-      </div>
+
     </div>
     <div class="space--xl"></div>
 
     <!-- section highlights -->
     <div class="row row--4-4-4">
-      {% for highlight in section.highlights %}
-        <div class="col">
-          {% include page/highlight.html %}
-        </div>
+      {% assign highlights = section.highlights %}
+
+      {% for highlight in highlights %}
+
+        {% assign highlightdata = site.data.modal.highlight | where: "id", highlight.id %}
+        {% for highlight in highlightdata %}
+
+          <div class="col">
+            {% include page/highlight.html %}
+          </div>
+
+        {% endfor %}
       {% endfor %}
     </div>
 
@@ -53,10 +72,10 @@ layout: default
 
 
 
-<div class="vpad--xxl bg--grey-darkest text--white">
+<div class="vpad--xxl bg--white">
   <div class="container container--xxl">
     <div class="text--center">
-      <h2 class="title title--xl">Meet the experts</h2>
+      <h2 class="title title--xxxl title--display text--upper text--bold">Meet the experts</h2>
       <p class="text--xl">Vestibulum id ligula porta felis euismod semper. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
     </div>
     <div class="space--lg"></div>
@@ -65,7 +84,7 @@ layout: default
       {% assign experts = site.data.experts | where: "page", page.id %}
       {% for expert in experts %}
       <div class="col">
-        <div class="bg-img bg-img--3-4">
+        <div class="bg-img bg-img--3-4 bg-img--zoom" style="background-image: url({{site.img}}/img.jpg);">
           <a href="javascript:void(0);" data-modal-item="{{expert.id}}" class="js-open-modal bg-img__link"></a>
         </div>
       </div>
