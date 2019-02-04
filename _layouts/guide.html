@@ -11,19 +11,6 @@ layout: default
       <a href="javascript:void(0);" data-map-focus="{{page.id}}" class="js-open-map btn btn--primary">Explore {{page.title}} map</a>
     </div>
 
-    <div class="space--xxl"></div>
-    {% for feature in page.intro-sections %}
-      <div class="bob{% cycle '', ' bob--swap'%}">
-        <div class="bob__img">
-          <div class="bg-img bg-img--4-3" style="background-image: url({{site.img}}/img.jpg);"></div>
-        </div>
-        <div class="bob__text">
-          <h2 class="title title--lg text--bold">{{feature.title}}</h2>
-          {{feature.content}}
-        </div>
-      </div>
-    {% endfor %}
-
   </div>
 </div>
 
@@ -38,8 +25,10 @@ layout: default
     <div class="text--center">
 
       <h2 class="title title--xxxl title--display text--upper text--bold">{{section.title}}</h2>
-      <div class="space--xxs"></div>
-      <h5 class="title title--xxs title--lines text--medium text--upper text--wide-kern">{{section.subtitle}}</h5>
+      {% if section.subtitle %}
+        <div class="space--xxs"></div>
+        <h5 class="title title--xxs title--lines text--medium text--upper text--wide-kern">{{section.subtitle}}</h5>
+      {% endif %}
       <div class="space--sm"></div>
       <div class="container container--xl text--medium">
         {{section.content}}

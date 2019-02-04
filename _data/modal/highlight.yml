@@ -1,14 +1,14 @@
 
 
 
-##  ==== Central & Soho // central-and-soho ====
+##  ==== Old Town Central // old-town-central ====
 
 - type: highlight
   title: Club 71
   id: club-71
   location: Hollywood Road, Central
   content: With so many upmarket bars to pick from, why go to this rather simple, unassuming bar? Club 71 is the hangout for Hong Kong’s artists, creatives, and journalists, ad-libbing on the day’s news, and on art and culture. It’s a bohemian haunt, a colourfully-painted hangout that inspires friendly, intellectual conversation. Prop yourself up and meet the locals.
-  section: central-and-soho
+  section: old-town-central
   pages:
     - id: overview
     - id: hong-kong
@@ -18,51 +18,51 @@
   id: man-mo-temple
   location: Hollywood Road, Central
   content: One of Hong Kong’s oldest temples, Man Mo is a serene spiritual outpost in the heart of the city. Man represents the gods of literature, and Mo the gods of war. This Taoist temple was built in 1847 by wealthy Chinese merchants, often hosting disputes between the Chinese and colonialists. The heady atmosphere beguiles any visitor, proving a thoroughly enchanting experience.
-  section: central-and-soho
+  section: old-town-central
   pages:
     - id: overview
     - id: hong-kong
 
 - type: highlight
-  title: Lan Kwai Fong
-  id: lan-kwai-fong
-  location: Between Soho & Central Hong Kong
-  content: A classic nightspot since the ‘80s, LKF is a byword for Hong Kong nightlife. Packed-out bars buzz with classic dancefloor hits, where revellers spill out into the streets charging the night with energy. These are well-worn stomping grounds, but the sheer excitement the streets foster makes LKF an addictive place to dance the night away...
-  section: central-and-soho
+  title: Central’s Galleries
+  id: centrals-galleries
+  location: Central Hong Kong
+  content: Discover Central’s artsy side in a clutch of burgeoning galleries and established culture centres. White Cube, Gagosian Gallery and a.m. Space are top of a long list of art hangouts, with more established cultural centres like Tai Kwun and H Queens building on the neighbourhood’s cultural output.
+  section: old-town-central
   pages:
     - id: overview
     - id: hong-kong
 
 
 
-##  ==== Causeway Bay // causeway-bay ====
+##  ==== Wan Chai // wan-chai ====
 
 - type: highlight
-  title: Boutique Shopping
-  id: boutique-shopping
-  location: Various Locations
-  content: With all the high-end stores vying for your attention (and more importantly, your money), it may pay to seek out something a little more unique. Discover local designers for truly cutting-edge fashion. Try the Island Beverley Mall, a place of youthful exuberance with bright fashions illuminating micro-shops sat at the forefront of Hong Kong’s fashion trends.
-  section: causeway-bay
+  title: Wan Chai Heritage Trail
+  id: wan-chai-heritage-trail
+  location:
+  content: Divided into two parts, one for architecture and one for culture, this fascinating walking trail is the best way to get under the skin of Hong Kong’s heritage. From meaningful 19th-century landmarks like Blue House to the bustling Wan Chai market – with a haunted house thrown in for good measure – walk the streets of old Hong Kong.
+  section: wan-chai
   pages:
     - id: overview
     - id: hong-kong
 
 - type: highlight
-  title: Food Street
-  id: food-street
-  location: Houston Street, Causeway Bay
-  content: If you’re doing Causeway Bay the right way, you’ll need a refuel before digging out your new outfit. Head over to cleverly named Food Street, for al fresco dining spots that embody the fact that Hong Kong is a premiere foodie destination.
-  section: causeway-bay
+  title: Dim Sum
+  id: dim-sum
+  location:
+  content: Wan Chai is bursting with dim sum joints; the perfect midday pick-me-up whilst you explore the cool streets of the neighbourhood. Fook Lam Moon is a popular spot with the jet set, an upmarket offering lauded by many for its exquisite dining. Lighter on the pocket is Dim Dim Sum, a spot where you can stuff yourself silly with traditional dim sum favourites.
+  section: wan-chai
   pages:
     - id: overview
     - id: hong-kong
 
 - type: highlight
-  title: Times Square
-  id: times-square
-  location: Matheson Street, Causeway Bay
-  content: Hong Kong’s Times Square shares much of the awe-inspiring drama of New York’s counterpart. Best seen at night, Times Square lights up in a myriad of colours that reach to the tops of the surrounding glass and steel monoliths. Plus, all the shops stay open late into the night.
-  section: causeway-bay
+  title: Lockhart Road Parties
+  id: lockhart-road-parties
+  location:
+  content: Once a rather gritty backdrop for Suzie Wong whispers, Lockhart Road is now a hipper, cheaper alternative to LKF. Classy cocktail bars like Mizunara and Back Bar make excellent watering holes, with The Wanch and Worth The Fuss promoting live music and DJs ‘til the early hours.
+  section: wan-chai
   pages:
     - id: overview
     - id: hong-kong
@@ -151,30 +151,30 @@
 ##  ==== North // north ====
 
 - type: highlight
-  title: Jiufin teahouse
-  id: jiufin-teahouse
-  location: Location
-  content: Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum. Maecenas sed diam eget risus varius blandit sit amet non magna. Etiam porta sem malesuada magna mollis euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id elit non mi porta gravida at eget metus.
+  title: Jiufen Teahouse
+  id: jiufen-teahouse
+  location:
+  content: Perched high in the mountains, Jiufen is a mesmerising location to get to grips with Taiwanese tea culture. Aside from being utterly transfixed by the heady climb of Old Street, head for A Mei Tea House, the town’s most known, and pitch up for an afternoon delight. Dark wood and lines of red lanterns paint the iconic Jiufen picture; perch with your afternoon tea on the terrace and enjoy truly beguiling views over the rolling misty mountains...
   section: north
   pages:
     - id: overview
     - id: taiwan
 
 - type: highlight
-  title: Yangmingshan geysers
-  id: yangmingshan-geysers
-  location: Location
-  content: Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum. Maecenas sed diam eget risus varius blandit sit amet non magna. Etiam porta sem malesuada magna mollis euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id elit non mi porta gravida at eget metus.
+  title: Yangmingshan National Park
+  id: yangmingshan-national-park
+  location:
+  content: On Taipei’s doorstep lies this diverse eco-sprawl, a rippling collection of mountains and steaming crevasses. Yangmingshan National Park offers forested mountain hikes, roaming cows in grassy hills, and the sharp smell of sulphur amongst bubbling volcanic activity. Head for Xiaoyoukeng to explore this gassy, otherworldly scene, before taking the trail that winds up the tallest peak in the park – Mt Qixing. As you climb its heights, a glorious view of downtown Taipei reveals itself.
   section: north
   pages:
     - id: overview
     - id: taiwan
 
 - type: highlight
-  title: Hot springs
+  title: Hot Springs
   id: hot-springs
-  location: Location
-  content: Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum. Maecenas sed diam eget risus varius blandit sit amet non magna. Etiam porta sem malesuada magna mollis euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id elit non mi porta gravida at eget metus.
+  location:
+  content: Taiwan’s unique geological landscape has been fully adopted into Taiwanese culture. Where is this most evident? The country’s wonderfully popular hot springs are ingrained in the leisure traditions of locals, and the north is home to some of the island’s finest. Beitou is the most accessible, just a short ride from Taipei. A wealth of springs for all budgets nestle in this volcanic area. For something a little more adventurous, head for Wulai and do as the locals do; ignore the hot spring hotels and head straight for the river, where there is a public hot spring bath. There’s also an aboriginal village to explore, making Wulai a fascinating day trip.
   section: north
   pages:
     - id: overview
@@ -183,30 +183,30 @@
 ##  ==== East // east ====
 
 - type: highlight
-  title: Penghu Island
-  id: penghu-island
-  location: Location
-  content: Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum. Maecenas sed diam eget risus varius blandit sit amet non magna. Etiam porta sem malesuada magna mollis euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id elit non mi porta gravida at eget metus.
+  title: Taroko National Park
+  id: taroko-national-park
+  location:
+  content: Taroko National Park is filled with the natural drama that makes Taiwan’s outdoors so compelling. Hiking trails criss-cross this gorgeous landscape, with the highlight – to which visitors swarm – being the eponymous gorge. The thick, narrow walls carved by the dwarfed river rise to dizzying heights. Walkways help you get the most out of the environment, one which beguiles and humbles any visitor. Don’t miss the temple-peaked waterfall, the Eternal Spring Shrine, or visiting the aboriginal Taroko people that inhabit the mountainsides.
   section: east
   pages:
     - id: overview
     - id: taiwan
 
 - type: highlight
-  title: Taroko Gorge tribe
-  id: taroko-gorge-tribe
-  location: Location
-  content: Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum. Maecenas sed diam eget risus varius blandit sit amet non magna. Etiam porta sem malesuada magna mollis euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id elit non mi porta gravida at eget metus.
+  title: Yushan National Park
+  id: yushan-national-park
+  location:
+  content: This collection of soaring peaks, home to Taiwan’s highest, is for many locals a bucket-list destination. Climbing the Jade Mountain is a once-in-a-lifetime experience; which, naturally, tells us of the challenge and reward that the monolith offers. If that seems a little too tricky, the mountain trails in Yushan are fit for incredible hikes; with a bit of forward planning, you could also spend the night in the forested wilderness at one of a clutch of campsites. It doesn’t get more off-the-grid than that!
   section: east
   pages:
     - id: overview
     - id: taiwan
 
 - type: highlight
-  title: Alishan Mountain railway tribe
-  id: alishan-mountain-railway-tribe
-  location: Location
-  content: Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum. Maecenas sed diam eget risus varius blandit sit amet non magna. Etiam porta sem malesuada magna mollis euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id elit non mi porta gravida at eget metus.
+  title: Taitung & Dulan
+  id: taitung-dulan
+  location:
+  content: Bohemia on sea is one way to describe these towns; it seems Taiwan’s east-coast hideaways, a little off the conventional tourist path, are now a hub of surfing and cafe culture. The beaches are beautiful and not very busy, with great waves and chilled-out beach bars. Taitung is the bigger, with eccentric festivals like Bombing Master Handan, with Dulan a smaller hamlet quickly becoming a talked-about hidden gem on the coast. Indigenous culture is ever-present in this area, adding to the unique repertoire of cultural experiences that the area offers.
   section: east
   pages:
     - id: overview
@@ -217,28 +217,28 @@
 - type: highlight
   title: Tianliao Moon World
   id: tianliao-moon-world
-  location: Location
-  content: Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum. Maecenas sed diam eget risus varius blandit sit amet non magna. Etiam porta sem malesuada magna mollis euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id elit non mi porta gravida at eget metus.
+  location:
+  content: This otherworldly landscape is one of Taiwan’s most striking; perhaps because of its distinct lack of vegetation, at total odds with the lush sprawl of the island’s interior. Instead, alien craggy outcrops with a moon-grey hue jut and scar the landscape. Take the wooden walkways that traverse the rocky hills, offering a selection of great viewpoints from which to spy this strange scene.
   section: south
   pages:
     - id: overview
     - id: taiwan
 
 - type: highlight
-  title: Kenting’s birds and butterflies
-  id: kentings-birds-and-butterflies
-  location: Location
-  content: Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum. Maecenas sed diam eget risus varius blandit sit amet non magna. Etiam porta sem malesuada magna mollis euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id elit non mi porta gravida at eget metus.
+  title: Kenting National Park
+  id: kenting-national-park
+  location:
+  content: On the southern tip of the island lies the first National Park in Taiwan – Kenting. In the Forest Recreation Area rare examples of plants abound, making the area one of the world’s finest tropical botanical gardens. Spotting butterflies and birds is a rare pleasure here. Kenting is also a top local’s beach destination; long white sands are more than big enough to accommodate in-the-know beach lovers, making Kenting a great spot for a private beach escape.
   section: south
   pages:
     - id: overview
     - id: taiwan
 
 - type: highlight
-  title: Orchid island tribe
-  id: orchid-island-tribe
-  location: Location
-  content: Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum. Maecenas sed diam eget risus varius blandit sit amet non magna. Etiam porta sem malesuada magna mollis euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id elit non mi porta gravida at eget metus.
+  title: Orchid Island
+  id: orchid-island
+  location:
+  content: Home to the aboriginal Tao community, this serene island hideaway is a cultural and natural playground. From the volcanic beaches dotted with traditional canoes to the festivals and celebrations in the Tao calendar, Orchid Island promises a glimpse at a rare part of Taiwanese life, in a setting of unrivalled beauty. An off-the-beaten-path destination, reach the island by plane (book well in advance!) or ferry and don’t miss the chance to snorkel above the island’s unspoilt and famous technicolour coral reefs.
   section: south
   pages:
     - id: overview
@@ -247,30 +247,30 @@
 ##  ==== West // west ====
 
 - type: highlight
-  title: Yushan
-  id: yushan
-  location: Location
-  content: Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum. Maecenas sed diam eget risus varius blandit sit amet non magna. Etiam porta sem malesuada magna mollis euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id elit non mi porta gravida at eget metus.
-  section: west
-  pages:
-    - id: overview
-    - id: taiwan
-
-- type: highlight
-  title: Oldest Temples
-  id: oldest-temples
-  location: Location
-  content: Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum. Maecenas sed diam eget risus varius blandit sit amet non magna. Etiam porta sem malesuada magna mollis euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id elit non mi porta gravida at eget metus.
-  section: west
-  pages:
-    - id: overview
-    - id: taiwan
-
-- type: highlight
-  title: Sun Moon lake
+  title: Sun Moon Lake
   id: sun-moon-lake
-  location: Location
-  content: Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum. Maecenas sed diam eget risus varius blandit sit amet non magna. Etiam porta sem malesuada magna mollis euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id elit non mi porta gravida at eget metus.
+  location:
+  content: This crescent-shaped sliver of silver water is one of Taiwan’s biggest outdoor draws. It’s a beautiful destination for a host of activities – whether you dart across the calm waters by boat hopping from village to village or cycle the shoreline visiting mystifying lakeside temples, the mountain-backed setting is ridiculously inviting. The area is also home to the Thao community, making any getaway to the lake one packed with unique cultural pursuits.
+  section: west
+  pages:
+    - id: overview
+    - id: taiwan
+
+- type: highlight
+  title: Alishan Mountain
+  id: alishan-mountain
+  location:
+  content: The Alishan Forest Recreation Area is a spellbinding outdoor destination; forested mountainsides stretch high above the clouds. Some are carved out by hand, stepped tea plantations that produce some of Taiwan’s most coveted brews. Take the mountain railway, a colonial throwback, that judders its way to the top of Alishan Mountain – the views are superb. Be sure to grab a railway bento box for the trip; Taiwanese comfort food only tastes this good when winding up a mountain.
+  section: west
+  pages:
+    - id: overview
+    - id: taiwan
+
+- type: highlight
+  title: Penghu Islands
+  id: penghu-islands
+  location:
+  content: Penghu’s islands are home to some of Taiwan’s most beautiful beaches. It’s why they’ve remained a favourite getaway for mainland locals, a distant paradise reachable by boat or plane. Aside from relishing the clear waters and long stretches of white sand, discover ornate temples and the traditional Erkan Old Residences, each painting a traditional scene fit for culture seekers that need a little more than long beach days… What a thought!
   section: west
   pages:
     - id: overview
