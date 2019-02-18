@@ -6,18 +6,71 @@ nav: true
 nav-order: 4
 nav-title: Competition
 
+banner:
+  content: >
+    <div class="container container--xxl text--center text--white">
+      <div class="title title--xs title--lines text--upper text--wide-kern text--bold">Metropolis to Mountain</div>
+      <div class="space--xs"></div>
+      <h1 class="title title--display title--xxxl text--upper text--bold">Win a trip of a lifetime to Hong Kong & Taiwan!</h1>
+    </div>
+
+
+
 intro: >
-  <p class="text--xxl text--bold">Win your personalised metropolis to mountain tour!</p>
   <p class="text--lg">Fly to Hong Kong with Cathay Pacific and head for urban adventure. Your four-night stay is complemented by three experiences you can choose for yourself, helping you get the best out of your city getaway. Next, you’ll fly to Taiwan for an unforgettable outdoor escape. For four nights, Taipei will be your base, from which you’ll explore hot springs and waterfalls, mountains and serene island hideaways. </p>
   <p class="text--lg text--bold">From metropolis to mountain, enter this competition to win an unforgettable East Asia escape.</p>
+  <div class="space--sm"></div>
+  <a href="https://bestinhongkong.discoverhongkong.com/uk" class="btn btn--solid">Enter now</a>
+
+
+
+sections:
+
+  - title: Hong Kong
+    content: >
+      <p>Lose yourself in the urban sprawl, with a choice of three unique experiences to help you get the most out of your city adventure. Stay at Hotel Jen, close to the HKU MTR station, and relax in the rooftop, harbour view pool.</p>
+
+  - title: Taiwan
+    content: >
+      <p>Head for an outdoor adventure in Taiwan, with an unmissable tour that takes in the island’s most beguiling natural sights. Each filled day of your itinerary is bookended with a five-star stay in Taipei and a one-night, five-star hot-spring hotel stay in Jiaoxi.</p>
+
+  - title: Cathay Pacific
+    content: >
+      <p>Your flights to Hong Kong, connection to Taiwan and return flights back to the UK are all taken care of by Cathay Pacific. Fly in comfort with the airline that knows this corner of the world best.</p>
+
+
 
 ---
 
 <div class="vpad--xxl bg--grey-lightest">
+
   <div class="container container--xxl text--center">
     {{page.intro}}
-    <div class="space--sm"></div>
-    <a href="#" class="btn btn--solid">Enter now</a>
   </div>
+
+  <div class="space--xxxl"></div>
+
+  <div class="container container--xxl">
+    {% for section in page.sections %}
+    <div class="bob{% cycle '',' bob--swap' %}">
+      <div class="bob__img">
+        <div class="bg-img bg-img--16-9" style="background-image: url({{site.img}}/content/{{page.id}}/{{section.title | slugify}}.jpg);"></div>
+      </div>
+      <div class="bob__text">
+        <h2 class="title title--md">{{section.title}}</h2>
+        <p>{{section.content}}</p>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+  <div class="space--xxl"></div>
+
+  <div class="text--center">
+    <a href="https://bestinhongkong.discoverhongkong.com/uk" class="btn btn--solid">Enter now</a>
+  </div>
+
 </div>
+
+
 

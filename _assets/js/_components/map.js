@@ -33,10 +33,10 @@
   function map(mapFocus){
 
     // setting zoom levels for different map data
-    var poiZoomLevel = 7.5;
-    var overviewZoomLevel = 5.15;
+    var poiZoomLevel = 6;
+    var overviewZoomLevel = 5.8;
     var maxZoomLevel       = 16;
-    var minZoomLevel       = 4.5;
+    var minZoomLevel       = 4;
     var markerColor        = "#c11b28";
 
     // launch map with settings - append "?fresh=true" to "style:" to refresh
@@ -45,6 +45,7 @@
       container: 'map',
       style: 'mapbox://styles/hamishjgray/cjqfg2s4y0h3t2sq3u9ziyxif',
       logoPosition: 'bottom-right',
+      zoom: 5.8,
       minZoom: minZoomLevel,
       maxZoom: maxZoomLevel - 0.5,
       center: [117.431714, 22.895755]
@@ -85,7 +86,7 @@
         focusMapOn(taiwanMarkers);
       } else if (mapFocus == "cities") {
         // focus zoomed out on both city markers
-        focusMapOn(cityMarkers);
+        // focusMapOn(cityMarkers);
       }
 
 
@@ -118,9 +119,9 @@
         layout: {
           "text-field": "{title}",
           "text-font": ["Rubik Regular"],
-          "text-size": 16,
+          "text-size": 22,
           "text-anchor": "center",
-          "text-letter-spacing": 0.2,
+          "text-letter-spacing": 0.25,
           "text-transform": "uppercase",
           "text-offset": [1.1, 0.1]
         },
@@ -201,7 +202,7 @@
         layout: {
           "text-field": "{title}",
           "text-font": ["Rubik Regular"],
-          "text-size": 20,
+          "text-size": 22,
           "text-anchor": "center",
           "text-letter-spacing": 0.25,
           "text-transform": "uppercase",
@@ -225,10 +226,112 @@
         focusMapOn(hongKongMarkers);
       });
 
+      // data source
+      map.addSource("hongkong-markers", {
+        type: "geojson",
+        data: hongKongMarkers,
+        cluster: true,
+        clusterMaxZoom: 14,
+        clusterRadius: 45
+      });
+
+      // background colour
+      map.addLayer({
+        id: "hongkong-clusters",
+        type: "circle",
+        source: "hongkong-markers",
+        filter: ["has", "point_count"],
+        paint: {
+          "circle-color": markerColor,
+          "circle-radius": 23
+        }
+      });
+
+      // cluster number shadow
+      map.addLayer({
+        id: "hongkong-cluster-count-shadow",
+        type: "symbol",
+        source: "hongkong-markers",
+        filter: ["has", "point_count"],
+        layout: {
+          "text-field": "{point_count_abbreviated}",
+          "text-font": ["Rubik Medium"],
+          "text-size": 24
+        },
+        paint: {
+          "text-color": "#810612",
+          "text-translate": [-1.75,2.25]
+        }
+      });
+
+      // background colour zoom level
+      map.setLayerZoomRange('hongkong-clusters', poiZoomLevel, maxZoomLevel);
+
+      // background colour click event
+      map.on('click', 'hongkong-clusters', function (e) {
+        var features = map.queryRenderedFeatures(e.point, { layers: ['hongkong-clusters'] });
+        var clusterId = features[0].properties.cluster_id;
+        map.getSource('hongkong-markers').getClusterExpansionZoom(clusterId, function (error, zoom) {
+          if (error) { return; }
+          // center on expanded cluster
+          map.flyTo({
+            center: features[0].geometry.coordinates,
+            zoom: (zoom + 1) // makes it zoom in a bit more so the group breaks up quicker?
+          });
+        });
+      });
+
+      // cluster number shadow zoom level
+      map.setLayerZoomRange('hongkong-cluster-count-shadow', poiZoomLevel, maxZoomLevel);
+
+      // cluster number
+      map.addLayer({
+        id: "cluster-count",
+        type: "symbol",
+        source: "hongkong-markers",
+        filter: ["has", "point_count"],
+        layout: {
+          "text-field": "{point_count_abbreviated}",
+          "text-font": ["Rubik Medium"],
+          "text-size": 24
+        },
+        paint: {
+          "text-color": "#fff",
+          "text-translate": [-0.75,1.25]
+        }
+      });
+
+      // cluster number zoom level
+      map.setLayerZoomRange('cluster-count', poiZoomLevel, maxZoomLevel);
+
+      // markers
+      map.addLayer({
+        id: "hongkong-pois",
+        type: "symbol",
+        source: "hongkong-markers",
+        filter: ["!has", "point_count"],
+        layout: {
+          "icon-image": "poi", // custom icon is in the mapbox style spritesheet
+          "icon-size": 0.5,
+          'icon-anchor': "bottom",
+          'icon-allow-overlap': true
+        }
+      });
+
+      // marker zoom level
+      map.setLayerZoomRange('hongkong-pois', poiZoomLevel, maxZoomLevel);
+
+      // marker click event
+      map.on('click', 'hongkong-pois', function (e) {
+        var clickedPoiId = e.features[0].properties.id
+        modalOpen(null, clickedPoiId);
+      });
+
+
 
 
       //////////////////////////////////////////////////////////////////////////
-      ///////////////////////////////////////////////////////  TAIWAN MARKERS
+      ///////////////////////////////////////////////////////  TAIWAN
       //////////////////////////////////////////////////////////////////////////
 
       // markers
@@ -262,7 +365,7 @@
         layout: {
           "text-field": "{title}",
           "text-font": ["Rubik Regular"],
-          "text-size": 20,
+          "text-size": 22,
           "text-anchor": "center",
           "text-letter-spacing": 0.25,
           "text-transform": "uppercase",
@@ -286,16 +389,10 @@
         focusMapOn(taiwanMarkers);
       });
 
-
-
-      //////////////////////////////////////////////////////////////////////////
-      ////////////////////////////////////////////////////////////  POI CLUSTERS
-      //////////////////////////////////////////////////////////////////////////
-
       // data source
-      map.addSource("poi-markers", {
+      map.addSource("taiwan-markers", {
         type: "geojson",
-        data: poiMarkers,
+        data: taiwanMarkers,
         cluster: true,
         clusterMaxZoom: 14,
         clusterRadius: 45
@@ -303,9 +400,9 @@
 
       // background colour
       map.addLayer({
-        id: "clusters",
+        id: "taiwan-clusters",
         type: "circle",
-        source: "poi-markers",
+        source: "taiwan-markers",
         filter: ["has", "point_count"],
         paint: {
           "circle-color": markerColor,
@@ -315,9 +412,9 @@
 
       // cluster number shadow
       map.addLayer({
-        id: "cluster-count-shadow",
+        id: "taiwan-cluster-count-shadow",
         type: "symbol",
-        source: "poi-markers",
+        source: "taiwan-markers",
         filter: ["has", "point_count"],
         layout: {
           "text-field": "{point_count_abbreviated}",
@@ -331,13 +428,13 @@
       });
 
       // background colour zoom level
-      map.setLayerZoomRange('clusters', poiZoomLevel, maxZoomLevel);
+      map.setLayerZoomRange('taiwan-clusters', poiZoomLevel, maxZoomLevel);
 
       // background colour click event
-      map.on('click', 'clusters', function (e) {
-        var features = map.queryRenderedFeatures(e.point, { layers: ['clusters'] });
+      map.on('click', 'taiwan-clusters', function (e) {
+        var features = map.queryRenderedFeatures(e.point, { layers: ['taiwan-clusters'] });
         var clusterId = features[0].properties.cluster_id;
-        map.getSource('poi-markers').getClusterExpansionZoom(clusterId, function (error, zoom) {
+        map.getSource('taiwan-markers').getClusterExpansionZoom(clusterId, function (error, zoom) {
           if (error) { return; }
           // center on expanded cluster
           map.flyTo({
@@ -348,13 +445,13 @@
       });
 
       // cluster number shadow zoom level
-      map.setLayerZoomRange('cluster-count-shadow', poiZoomLevel, maxZoomLevel);
+      map.setLayerZoomRange('taiwan-cluster-count-shadow', poiZoomLevel, maxZoomLevel);
 
       // cluster number
       map.addLayer({
-        id: "cluster-count",
+        id: "taiwan-cluster-count",
         type: "symbol",
-        source: "poi-markers",
+        source: "taiwan-markers",
         filter: ["has", "point_count"],
         layout: {
           "text-field": "{point_count_abbreviated}",
@@ -368,19 +465,13 @@
       });
 
       // cluster number zoom level
-      map.setLayerZoomRange('cluster-count', poiZoomLevel, maxZoomLevel);
-
-
-
-      //////////////////////////////////////////////////////////////////////////
-      /////////////////////////////////////////////////////////////  POI MARKERS
-      //////////////////////////////////////////////////////////////////////////
+      map.setLayerZoomRange('taiwan-cluster-count', poiZoomLevel, maxZoomLevel);
 
       // markers
       map.addLayer({
-        id: "pois",
+        id: "taiwan-pois",
         type: "symbol",
-        source: "poi-markers",
+        source: "taiwan-markers",
         filter: ["!has", "point_count"],
         layout: {
           "icon-image": "poi", // custom icon is in the mapbox style spritesheet
@@ -391,10 +482,10 @@
       });
 
       // marker zoom level
-      map.setLayerZoomRange('pois', poiZoomLevel, maxZoomLevel);
+      map.setLayerZoomRange('taiwan-pois', poiZoomLevel, maxZoomLevel);
 
       // marker click event
-      map.on('click', 'pois', function (e) {
+      map.on('click', 'taiwan-pois', function (e) {
         var clickedPoiId = e.features[0].properties.id
         modalOpen(null, clickedPoiId);
       });

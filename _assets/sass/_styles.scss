@@ -5,21 +5,25 @@
   &-intro {
     position: relative;
     padding: $s8 0;
-    background: $black;
+    background-color: $black;
     color: $white;
-    &:before {
-      content: "";
-      position: absolute;
-      bottom: 100%; left: 0;
-      height: 100px;
-      width: 100%;
-      background: linear-gradient(0deg, rgba($black,1), rgba($black,0));
-    }
     &--light {
-      background: $white;
+      background-color: $white;
       color: $grey-darker;
+    }
+    &--gradient {
       &:before {
-        content: none;
+        content: "";
+        position: absolute;
+        bottom: 100%; left: 0;
+        height: 100px;
+        width: 100%;
+        background: linear-gradient(0deg, rgba($black,1), rgba($black,0));
+      }
+      &.page-intro--light {
+        &:before {
+          background: linear-gradient(0deg, rgba($white,1), rgba($white,0));
+        }
       }
     }
   }

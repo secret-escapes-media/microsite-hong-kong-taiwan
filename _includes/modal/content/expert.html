@@ -1,28 +1,39 @@
 <!-- Expert modal -->
 <div class="container container--xxxl container--no-padding modal__content modal-expert">
 
-  <div class="boxpad--xxl bg--white">
+  <div class="boxpad--xxl">
+    <div class="boxpad--xxl bg--white">
 
-    <div class="container container--xl text--center">
-      <span class="title title--xl text--bold">{{item.name}}</span>
-      <div class="space--xxs"></div>
-      <p>{{item.intro}}</p>
-    </div>
+      <div class="container">
+        <div class="row row--gutters row--gutters-xl">
+          <div class="col col--4">
+            <div class="bg-img bg-img--1-1 bg-img--circle" style="background-image: url({{site.img}}/content/{{page.id}}/expert-{{item.id}}.jpg);"></div>
+          </div>
+          <div class="col col--8">
 
-    <div class="space--lg"></div>
+            <span class="title title--xl text--bold">{{item.name}}</span>
+            <div class="space--xxs"></div>
+            {{item.intro}}
 
-    <div class="row row--4-4-4">
-      {% for highlight in item.highlights %}
-      <div class="col">
-        <div class="bg-img bg-img--16-9" style="background-image: url({{site.img}}/content/{{page.id}}/{{highlight.id}}.jpg);"></div>
-        <div class="boxpad--md bg--grey-lightest">
-          <span class="title title--xs text--bold">{{highlight.title}}</span>
-          <p>{{highlight.content}}</p>
+          </div>
         </div>
       </div>
-      {% endfor %}
-    </div>
 
+      <div class="space--lg"></div>
+
+      <div class="row row--4-4-4">
+        {% for highlight in item.highlights %}
+        <div class="col">
+          <div class="bg-img bg-img--16-9" style="background-image: url({{site.img}}/highlights/{{highlight.id}}.jpg);"></div>
+          <div class="boxpad--md bg--grey-lightest">
+            <span class="title title--xs text--bold">{{highlight.title}}</span>
+            <p>{{highlight.content}}</p>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+
+    </div>
   </div>
 </div>
 

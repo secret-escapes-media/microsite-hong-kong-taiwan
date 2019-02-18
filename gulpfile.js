@@ -118,7 +118,6 @@ gulp.task('build-main-js', function(cb) {
     './_assets/js/_components/marker-data/cities.js',
     './_assets/js/_components/marker-data/hong-kong.js',
     './_assets/js/_components/marker-data/taiwan.js',
-    './_assets/js/_components/marker-data/pois.js',
 
     // components
     './_assets/js/_components/standard.js',

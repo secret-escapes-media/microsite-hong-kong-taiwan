@@ -50,19 +50,25 @@
   pages:
     - id: taiwan
 
-  id: taiwan-expert-1
-  name: Taiwan Expert 1
-  intro: Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec sed odio dui. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec sed odio dui. Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+  id: richard-saunders
+  name: Richard Saunders
+  intro: >
+    <p>I’m a classical pianist turned travel writer from London, England. When I first arrived in Taiwan in June 1993, my plan was to stay for just three months. However the island’s amazing culture, people, food, and (above all) its stunning scenery, had different ideas for me, and I’ve stayed for 25 wonderful years!</p>
+    <p>During that time I’ve published eight hiking books exploring all corners of Taiwan and its fascinating (yet often-forgotten) outlying islands, written two long-running newspaper columns, and penned several hundred  magazine and newspaper articles about Taiwan. Since founding my hiking group, Taipei Hikers, in 2002, I’ve also guided hundreds of visitors, expats and residents on hikes and mountain treks all over this scenically stunning island. </p>
+
   highlights:
-    - title: Highlight title
-      id: highlight
-      content: Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.
-    - title: Highlight title
-      id: highlight
-      content: Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.
-    - title: Highlight title
-      id: highlight
-      content: Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.
+
+    - title:  Zuilu Old Trail, Taroko Gorge, Hualien County
+      id: zuilu-old-trail
+      content: "Perched nearly five hundred vertical meters above the road through Taroko Gorge (Taiwan’s greatest tourist attraction) and offering awe-inspiring views over the canyon, this astonishing cliff-cut trail is the finest half-day hike in Taiwan, but those with a fear of heights will probably want to give it a miss! With an early start, you can go up and get back down by lunchtime, leaving the afternoon to explore one or two of the shorter trails in the gorge."
+
+    - title: Zhenxibao Ancient Tree Grove, Hsinchu County
+      id: zhenxibao-ancient-tree-grove
+      content: "The vast cloud forest that covers large areas of Taiwan’s mountainous interior is full of mysterious and little-known wonders, including groves of ancient red cypress trees, many of which are over three thousand years old. Zhenxibao isn’t the easiest to reach, but it’s well worth the effort. Plus, if you come here you’ll have to spend a night in an authentic Atayal aboriginal village: a fascinating bonus!"
+
+    - title: Mount Yuanzui, Taichung City
+      id: mount-yuanzui
+      content: "Taiwan is one of the most ruggedly mountainous nations on earth, and a fantastic place for serious, multi-day mountain treks. Famous summits such as Mount Jade and Snow Mountain (both just under 4,000 meters high) are deservedly extremely popular, but the logistics of both treks are tricky and treks usually require booking a month or more in advance. For a challenging hike that you can do without any advance planning, try Mount Yuanzui. The 2,100 meter summit is a baby by Taiwan standards, and can be done in a day, but it’s a strenuous and exciting climb, culminating in a white-knuckle scramble up the bare rock of the summit pinnacle."
 
 
 
