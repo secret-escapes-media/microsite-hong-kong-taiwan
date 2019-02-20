@@ -9,8 +9,8 @@ var hongKongMarkers = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          114.15162,
-          22.28284
+          114.15152,
+          22.28262
         ]
       }
     },
@@ -22,8 +22,8 @@ var hongKongMarkers = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          114.15162,
-          22.28298
+          114.1516,
+          22.28305
         ]
       }
     },

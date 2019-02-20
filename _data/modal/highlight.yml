@@ -27,7 +27,7 @@
   title: Central’s Galleries
   id: centrals-galleries
   location: Central Hong Kong
-  content: Discover Central’s artsy side in a clutch of burgeoning galleries and established culture centres. White Cube, Gagosian Gallery and a.m. Space are top of a long list of art hangouts, with more established cultural centres like Tai Kwun and H Queens building on the neighbourhood’s cultural output.
+  content: Discover Central’s artsy side in a clutch of burgeoning galleries and established culture centres. White Cube, Gagosian Gallery and a.m. Space are top of a long list of art hangouts, with larger cultural centres like Tai Kwun and H Queens building on the neighbourhood’s cultural output. 
   section: old-town-central
   pages:
     - id: overview
@@ -51,7 +51,7 @@
   title: Sang Kee Restaurant
   id: sang-kee-restaurant
   location:
-  content: Wan Chai is bursting with dim sum joints; the perfect midday pick-me-up whilst you explore the cool streets of the neighbourhood. Sang Kee has been delighting locals for over 30 years – credentials that you can taste in the gorgeous Cantonese fare, still prepared the old-fashioned way. Don’t miss the famous fish congee at this colourful, casual and loud local’s haunt.
+  content: Wan Chai is bursting with dim sum joints; the perfect midday pick-me-up whilst you explore the cool streets of the neighbourhood. Sang Kee has been delighting locals for over 30 years – no surprise, as the Cantonese fare is simply divine and still prepared the old-fashioned way. Don’t miss the famous fish congee at this colourful, casual and loud local’s haunt.
   section: wan-chai
   pages:
     - id: overview
@@ -61,7 +61,7 @@
   title: Lockhart Road
   id: lockhart-road-parties
   location:
-  content: Once a rather gritty backdrop for Suzie Wong whispers, Lockhart Road is now a hipper, cheaper alternative to LKF. Classy cocktail bars like Mizunara and Back Bar make excellent watering holes, with The Wanch and Worth The Fuss promoting live music and DJs ‘til the early hours.
+  content: Once known as the gritty part of town, Lockhart Road has reinvented itself as a hipper, cheaper alternative to LKF. Classy cocktail bars like Mizunara and Back Bar make excellent watering holes, with The Wanch and Worth The Fuss promoting live music and DJs ‘til the early hours.
   section: wan-chai
   pages:
     - id: overview
@@ -86,7 +86,7 @@
   title: Pei Ho Counterparts
   id: pei-ho-counterparts
   location:
-  content: This humble eaterie has amassed a loyal following; it’s honest food, much-loved classics to feed the soul. But the main reason for this spot’s popularity? Brother Ming, the owner. He’ spent years serving the community, giving out free food to those most in need. So go and play a part, by eating some delicious food and paying forward a meal for one less fortunate.
+  content: This humble eaterie has amassed a loyal following; it’s honest food, much-loved classics to feed the soul. But the main reason for this spot’s popularity? Brother Ming, the owner. He spent years serving the community, giving out free food to those most in need. So go and play a part, by eating some delicious food and paying forward a meal for one less fortunate.
   section: sham-shui-po
   pages:
     - id: overview
@@ -96,7 +96,7 @@
   title: Hak Dei
   id: hak-dei
   location:
-  content: One of a few curious indie shops in the neighbourhood, Hak Dei specialises in retro homeware and lifestyle pieces. The best bit? The majority of the cool collection are found pieces from the city, making this one of the best places for truly unique souvenirs and gifts. Who doesn’t need a ‘60s bamboo steamer for their flat in Peckham?
+  content: One of a few curious indie shops in the neighbourhood, Hak Dei specialises in retro homeware and lifestyle pieces. The best bit? The majority of the cool collection are found pieces from the city, making this one of the best places for truly unique souvenirs and gifts. Who doesn’t need a sixties bamboo steamer for their flat in Peckham?
   section: sham-shui-po
   pages:
     - id: overview

@@ -6,7 +6,11 @@
       {% include components/logo-partner.html placement="footer" small='true' %}
     </div>
     <div class="space--sm text--sm">
-      <p>© Copyright <span class="js-year">2018</span> Secret Escapes</p>
+      {% if page.id == 'competition' %}
+        <p><a href="javascript:void(0);" data-modal-item="terms" class="js-open-modal footer__link">Terms and conditions apply.</a></p>
+        <div class="space--xxs"></div>
+      {% endif %}
+      <p> © Copyright <span class="js-year">2018</span> Secret Escapes</p>
     </div>
   </div>
 </footer>

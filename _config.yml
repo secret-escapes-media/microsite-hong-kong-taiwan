@@ -4,7 +4,7 @@ clients:
   - name: Hong Kong Tourism Board
     id: hong-kong
     logo: hong-kong.svg
-    link: "#client-name"
+    link: "http://www.discoverhongkong.com/uk/index.jsp?utm_source=Secret%20Escapes&utm_medium=Hub&utm_campaign=Hong%20Kong%20Taiwan&utm_content=Footer%20Logo"
   - name: Taiwan Tourist Bureau
     id: taiwan
     logo: taiwan.svg

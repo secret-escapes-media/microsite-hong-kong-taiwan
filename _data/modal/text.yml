@@ -1,11 +1,11 @@
 
 
 - type: text
-  id: text-modal
-  title: Text Modal
+  id: terms
+  title: Terms and Conditions
   content: Sed posuere consectetur est at lobortis. Aenean lacinia bibendum nulla sed consectetur. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus..
   pages:
-    - id: overview
+    - id: competition
 
 
 
