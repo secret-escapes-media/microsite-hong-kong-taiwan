@@ -31,6 +31,8 @@
                   {% include modal/content/form.html %}
                 {% elsif item.type == 'map' %}
                   {% include modal/content/map.html %}
+                {% elsif item.type == 'terms' %}
+                  {% include modal/content/terms.html %}
                 {% else %}
                   {% include modal/content/text.html %}
                 {% endif %}

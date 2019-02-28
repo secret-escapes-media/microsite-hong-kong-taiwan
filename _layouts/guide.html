@@ -57,7 +57,7 @@ layout: default
     {% if section.external-link %}
     <div class="space--md"></div>
     <div class="text--center">
-      <a href="{{section.external-link}}" class="btn btn--solid">Discover more</a>
+      <a id="track-{{page.id}}-{{section.id}}-btn" href="{{section.external-link}}" target="_blank" class="btn btn--solid">Discover more</a>
     </div>
     {% endif %}
 
@@ -67,7 +67,7 @@ layout: default
 {% endfor %}
 
 
-<!--
+<!-- EXPERTS / DISABLED
 <div class="vpad--xxl bg--white">
   <div class="container container--xxl">
     <div class="text--center">

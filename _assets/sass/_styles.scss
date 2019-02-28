@@ -31,7 +31,7 @@
 
 
 
-.overview-content {
+.overview-content--bg {
   padding-bottom: $s12;
   background-position: center bottom;
   background-size: 100% auto;
@@ -99,11 +99,16 @@
     position: absolute;
     top: 0;
     bottom: 0;
-    width: $xxl;
     background-color: rgba($white,0.5);
-    left: 50%;
-    margin-left: -480px;
-    z-index: 0;
+    width: 100%;
+    max-width: 100%;
+    @include bp($xxl){
+      width: $xxl;
+      max-width: 100%;
+      left: 50%;
+      margin-left: -480px;
+      z-index: 0;
+    }
   }
   // light theme
   &--dark {

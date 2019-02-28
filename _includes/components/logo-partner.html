@@ -1,7 +1,7 @@
 {% assign clients = site.clients %}
 
 {% for client in clients %}
-<a id="track-partner-logo-{{client.id}}-{{include.placement | prepend: '-'}}" class="logo logo--partner{% if include.small %} logo--partner-sm{% endif %} logo--{{client.id}}" href="{{client.link}}">
+<a id="track-partner-logo-{{client.id}}-{{include.placement | prepend: '-'}}" class="logo logo--partner{% if include.small %} logo--partner-sm{% endif %} logo--{{client.id}}" href="{{client.link}}" target="_blank">
   <img src="{{site.img}}/logo/{{client.logo}}" alt="{{client.name}} Logo">
 </a>
 {% endfor %}

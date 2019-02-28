@@ -11,7 +11,6 @@
     text-align: center;
     background-color: $grey-darkest;
   }
-
   // spacing for multiple logos in site footer
   .logo { margin: $s-2; }
 
@@ -20,4 +19,9 @@
   background-color: $white;
   //////////////////////////////////////////////////////////////////////////////
 
+}
+.footer {
+  &__link {
+    text-decoration: underline;
+  }
 }

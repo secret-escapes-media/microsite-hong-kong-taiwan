@@ -19,8 +19,10 @@ li {
   list-style-position:
   outside; margin-left: $s1;
 }
-ul li   { list-style-type: disc; }
+ul li,
+ol li ul li   { list-style-type: disc; }
 ol li   { list-style-type: decimal; }
+ol.letter li   { list-style-type: lower-alpha; }
 
 hr {
   border: 0;

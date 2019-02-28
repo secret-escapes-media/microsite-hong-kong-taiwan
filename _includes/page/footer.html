@@ -10,7 +10,7 @@
         <p><a href="javascript:void(0);" data-modal-item="terms" class="js-open-modal footer__link">Terms and conditions apply.</a></p>
         <div class="space--xxs"></div>
       {% endif %}
-      <p> © Copyright <span class="js-year">2018</span> Secret Escapes</p>
+      <p> © Copyright <span class="js-year">2018</span> Secret Escapes. Supported by {% for client in site.clients %}{{client.name}}{% if forloop.last %}{% else %} and {% endif %}{% endfor%}.</p>
     </div>
   </div>
 </footer>
