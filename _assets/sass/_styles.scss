@@ -125,3 +125,27 @@
     z-index: 10;
   }
 }
+
+
+.sale-banner {
+  position: relative;
+  &__content {
+    text-align: center;
+    background-color: $white;
+    box-shadow: 0 0 30px 3px rgba($cathay,0.3);
+    // border: 1px solid $cathay;
+    border-radius: 5px;
+    padding: $s3 $s1;
+    margin-top: 40px;
+    position: relative;
+    z-index: 2;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    background-color: $grey-lightest;
+    height: 50%;
+    bottom: 0; left: 0; right: 0;
+  }
+}

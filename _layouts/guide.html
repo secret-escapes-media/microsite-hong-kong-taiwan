@@ -67,34 +67,6 @@ layout: default
 {% endfor %}
 
 
-<!-- EXPERTS / DISABLED
-<div class="vpad--xxl bg--white">
-  <div class="container container--xxl">
-    <div class="text--center">
-      <h2 class="title title--xxxl title--display text--upper text--bold">Meet the experts</h2>
-      <p class="text--xl">Vestibulum id ligula porta felis euismod semper. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-    </div>
-    <div class="space--lg"></div>
-    <div class="row row--6-6">
+<!-- EXPERTS -->
+{% include page/expert-section.html %}
 
-      {% assign experts = site.data.experts | where: "page", page.id %}
-      {% for expert in experts %}
-      <div class="col">
-        <div class="bg-img bg-img--1-1 bg-img--zoom" style="background-image: url({{site.img}}/content/{{page.id}}/expert-{{expert.id}}.jpg);">
-          <a href="javascript:void(0);" data-modal-item="{{expert.id}}" class="js-open-modal bg-img__link"></a>
-          <div class="bg-img__content">
-            <div class="boxpad--lg">
-              <div class="title title--xxs text--upper text--bold">MEET</div>
-              <div class="space--xxs"></div>
-              <h3 class="title title--xl text--bold">{{expert.name}}</h3>
-            </div>
-          </div>
-          <div class="bg-img__overlay"></div>
-        </div>
-      </div>
-      {% endfor %}
-
-    </div>
-  </div>
-</div>
--->

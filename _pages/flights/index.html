@@ -14,7 +14,7 @@ intro: >
   <h1 class="title title--xxl title--display text--bold text--upper">Flights with Cathay Pacific</h1>
   <p class="text--xl">With 49 non-stop flights a week from the UK, Cathay Pacific is the natural airline choice when travelling to Taiwan via Hong Kong. For your convenience, choose to fly from London Heathrow, London Gatwick or Manchester Airport.</p>
   <div class="space--sm"></div>
-  <a id="track-flights-btn-top" href="https://www.cathaypacific.com/cx/en_GB.html?utm_medium=PARTNERSHIP&utm_source=SECRET" class="btn btn--cathay" target="_blank">View flights</a>
+  <!-- <a id="track-flights-btn-top" href="https://www.cathaypacific.com/cx/en_GB.html?utm_medium=PARTNERSHIP&utm_source=SECRET" class="btn btn--cathay" target="_blank">View flights</a> -->
 
 
 features:
@@ -43,33 +43,39 @@ features:
 ---
 
 
-<div class="vpad--xxl bg--grey-lightest">
+<div class="bg--white">
   <div class="container container--xxl text--center">
+    <div class="space--xxl"></div>
     {{page.intro}}
   </div>
 </div>
 
 
-{% assign features = page.features %}
-<div class="container container--xxl vpad--xxl">
-  {% for feature in features %}
-  <div class="bob {% cycle '','bob--swap'%}">
-    <div class="bob__img">
-      <a href="{{site.baseurl}}{{feature.url}}">
-        <div class="bg-img bg-img--3-2" style="background-image: url('{{site.img}}/content/{{page.id}}/{{feature.id}}.jpg');"></div>
-      </a>
-    </div>
-    <div class="bob__text">
-      <h2 class="title title--sm text--bold">{{feature.title}}</h2>
-      <p class="text--lg">{{ feature.content}}</p>
-    </div>
-  </div>
-  {% endfor %}
+{% include page/cathay-sale-banner.html %}
 
-  <div class="space--xxxl"></div>
-  <div class="container container--xl text--center">
-    <h2 class="title title--xl">Get there with Cathay Pacific</h2>
-    <div class="space--md"></div>
-    <a id="track-flights-btn-bottom" href="https://www.cathaypacific.com/cx/en_GB.html?utm_medium=PARTNERSHIP&utm_source=SECRET" class="btn btn--cathay" target="_blank">View flights</a>
+
+<div class="bg--grey-lightest">
+  {% assign features = page.features %}
+  <div class="container container--xxl vpad--xxl">
+    {% for feature in features %}
+    <div class="bob {% cycle '','bob--swap'%}">
+      <div class="bob__img">
+        <a href="{{site.baseurl}}{{feature.url}}">
+          <div class="bg-img bg-img--3-2" style="background-image: url('{{site.img}}/content/{{page.id}}/{{feature.id}}.jpg');"></div>
+        </a>
+      </div>
+      <div class="bob__text">
+        <h2 class="title title--sm text--bold">{{feature.title}}</h2>
+        <p class="text--lg">{{ feature.content}}</p>
+      </div>
+    </div>
+    {% endfor %}
+
+    <div class="space--xxxl"></div>
+    <div class="container container--xl text--center">
+      <h2 class="title title--xl">Get there with Cathay Pacific</h2>
+      <div class="space--md"></div>
+      <a id="track-flights-btn-bottom" href="https://www.cathaypacific.com/cx/en_GB.html?utm_medium=PARTNERSHIP&utm_source=SECRET" class="btn btn--cathay" target="_blank">View flights</a>
+    </div>
   </div>
 </div>

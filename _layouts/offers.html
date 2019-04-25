@@ -2,6 +2,28 @@
 layout: default
 ---
 
-{% include offer/all-offers.html %}
+<div class="bg--white">
+  <div class="space--xxl"></div>
+  <div class="container container--xxl text--center">
+    {{page.intro}}
+  </div>
+</div>
+
+
+{% include page/cathay-sale-banner.html %}
+
+
+<div class="bg--grey-lightest">
+  {% include offer/variables.html %}
+  <div class="container vpad--xxl">
+    <div class="row row--xl-6-6 row--gutters-lg">
+      {% for offer in offers-by-price %}
+        <div class="col">
+          {% include offer/offer.html %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
 
 {% include page/promo-offers.html %}

@@ -6,40 +6,31 @@
   pages:
     - id: hong-kong
 
-  id: hong-kong-expert-1
-  name: Hong Kong Expert 1
-  intro: Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec sed odio dui. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec sed odio dui. Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+  id: carole-leung
+  name: Carole Leung
+  intro: >
+    <p>Having spent several years studying and working in the finance industry in Europe and Asia, I decided to go back to what was most truthful in my heart: art and creativity. KA Atelier, a private painting studio conceived in 2013, is a reflection of Hong Kong’s art and culture, frequently described as "East meets West" – due to its mix of Chinese traditions with Western influence from British rule. I love showing locals and tourists alike the traditions of Chinese painting, which I am determined to keep alive by passing on the lessons of my late teacher – a renowned Chinese Painting Master – with a modern approach. Hong Kong is a fantastic place for this; it’s brimming with creativity and culture. </p>
+
   highlights:
-    - title: Highlight title
-      id: highlight
-      content: Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.
-    - title: Highlight title
-      id: highlight
-      content: Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.
-    - title: Highlight title
-      id: highlight
-      content: Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.
+
+    - title:  Chinese Painting Class
+      location: KA Atelier
+      id: chinese-painting-class
+      content: "Where East meets West, KA Atelier offers highly popular classes in Chinese ink painting that have attracted tourists from around the world. Featured in Timeout and Lonely Planet, the beginners class introduces you to the meditative discipline through learning the skills and techniques of traditional ink, all under the tutelage of the studio’s artist. You'll be guided through the session with jazz or classical music playing in the background whilst being inspired by the artist’s own works on display and enjoying a cup of freshly brewed Chinese tea. At the end, you’ll have produced your very own piece of art to take home with you!"
+
+    - title: Star Street Precinct
+      location: Wanchai
+      id: star-street-precinct
+      content: "A gem hidden in the heart of Hong Kong, Star Street Precinct is a quaint, artsy and chic neighbourhood with plenty of non-mainstream design shops, restaurants, cafes and furniture shops. For a mid-afternoon snack, try one of Hong Kong’s oldest “dai pai dong” or street stalls, situated on one of the dead-end streets called Tak Yu that has served up local milk tea for more than 60 years."
+
+    - title: HK Park
+      location: Admiralty
+      id: hk-park
+      content: "Smacked right in the middle of the concrete jungle, HK Park offers a great haven from the hustle and bustle surrounding it. Walk through the beautifully maintained gardens with many lovely plants and water features or pay a visit to the aviary or teaware museum inside the park. For some art and history, just walk a few minutes down the road to Asia Society Center located next to the British Consulate to catch an art exhibition or join a tour of the gallery."
 
 
 
-- type: expert
-  page: hong-kong
-  pages:
-    - id: hong-kong
 
-  id: hong-kong-expert-2
-  name: Hong Kong Expert 2
-  intro: Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec sed odio dui. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec sed odio dui. Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
-  highlights:
-    - title: Highlight title
-      id: highlight
-      content: Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.
-    - title: Highlight title
-      id: highlight
-      content: Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.
-    - title: Highlight title
-      id: highlight
-      content: Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.
 
 
 ################################################################################
@@ -58,36 +49,20 @@
 
   highlights:
 
-    - title:  Zuilu Old Trail, Taroko Gorge, Hualien County
+    - title:  Zuilu Old Trail, Taroko Gorge
+      location: Hualien County
       id: zuilu-old-trail
       content: "Perched nearly five hundred vertical meters above the road through Taroko Gorge (Taiwan’s greatest tourist attraction) and offering awe-inspiring views over the canyon, this astonishing cliff-cut trail is the finest half-day hike in Taiwan, but those with a fear of heights will probably want to give it a miss! With an early start, you can go up and get back down by lunchtime, leaving the afternoon to explore one or two of the shorter trails in the gorge."
 
-    - title: Zhenxibao Ancient Tree Grove, Hsinchu County
+    - title: Zhenxibao Ancient Tree Grove
+      location: Hsinchu County
       id: zhenxibao-ancient-tree-grove
       content: "The vast cloud forest that covers large areas of Taiwan’s mountainous interior is full of mysterious and little-known wonders, including groves of ancient red cypress trees, many of which are over three thousand years old. Zhenxibao isn’t the easiest to reach, but it’s well worth the effort. Plus, if you come here you’ll have to spend a night in an authentic Atayal aboriginal village: a fascinating bonus!"
 
-    - title: Mount Yuanzui, Taichung City
+    - title: Mount Yuanzui
+      location: Taichung City
       id: mount-yuanzui
       content: "Taiwan is one of the most ruggedly mountainous nations on earth, and a fantastic place for serious, multi-day mountain treks. Famous summits such as Mount Jade and Snow Mountain (both just under 4,000 meters high) are deservedly extremely popular, but the logistics of both treks are tricky and treks usually require booking a month or more in advance. For a challenging hike that you can do without any advance planning, try Mount Yuanzui. The 2,100 meter summit is a baby by Taiwan standards, and can be done in a day, but it’s a strenuous and exciting climb, culminating in a white-knuckle scramble up the bare rock of the summit pinnacle."
 
 
-
-- type: expert
-  page: taiwan
-  pages:
-    - id: taiwan
-
-  id: taiwan-expert-2
-  name: Taiwan Expert 2
-  intro: Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec sed odio dui. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec sed odio dui. Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
-  highlights:
-    - title: Highlight title
-      id: highlight
-      content: Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.
-    - title: Highlight title
-      id: highlight
-      content: Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.
-    - title: Highlight title
-      id: highlight
-      content: Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.
 

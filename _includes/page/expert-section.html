@@ -1,0 +1,46 @@
+
+{% assign experts = site.data.experts | where: "page", page.id %}
+
+{% for expert in experts %}
+
+<div class="vpad--xxl bg--white">
+  <div class="container container--xxl">
+    <div class="text--center">
+      <h2 class="title title--sm title--display text--upper text--bold">Meet our {{page.title}} expert:</h2>
+          <div class="space--xs"></div>
+      <span class="title title--xxl text--medium">{{expert.name}}</span>
+      <hr class="hr--center">
+    </div>
+
+    <div class="space--lg"></div>
+
+    <div class="row row--gutters row--gutters-xl row--valign-center">
+      <div class="col col--4">
+        <div class="bg-img bg-img--1-1 bg-img--circle" style="background-image: url({{site.img}}/content/{{page.id}}/expert-{{expert.id}}.jpg);"></div>
+      </div>
+      <div class="col col--8">
+        {{expert.intro}}
+      </div>
+    </div>
+
+
+    <div class="space--xxl"></div>
+
+    {% for highlight in expert.highlights %}
+    <div class="bob{% cycle '', ' bob--swap'%}">
+      <div class="bob__img">
+        <div class="bg-img bg-img--4-3" style="background-image: url({{site.img}}/highlights/{{highlight.id}}.jpg);"></div>
+      </div>
+      <div class="bob__text">
+        <h4 class="title title--xs text--bold">{{highlight.title}}</h4>
+        <div class="space--xs"></div>
+        <div class="title text--upper text--wide-kern text--bold">{{highlight.location}}</div>
+        <p>{{highlight.content}}</p>
+      </div>
+    </div>
+    {% endfor %}
+
+
+  </div>
+</div>
+{% endfor %}
